@@ -1,0 +1,146 @@
+body{
+    background: radial-gradient(circle, #148cee,#130f14);/*Le damos un fondo diferente a la pagina*/
+   }
+   section{
+      margin: 0;
+   }
+   
+
+   .Grid-container{     /*Con grid para el justiy items y align items*/
+       display: grid;   
+       grid-template-columns: repeat(3, minmax(100px, 1fr));      
+       grid-template-rows: repeat(3, 100px); 
+       border: 3px #000 solid;
+       background-color: #333;
+       grid-gap: 5px;
+       z-index: 10; 
+   
+       grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+       grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+       grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/ 
+   }
+   /*Posicionar horizontalmente*/
+   .Justify-items-flex-start{  justify-items: start;}   /*podemos poner flex-start pero start es abreviado*/
+   .Justify-items-flex-center{  justify-items: center;}  /*podemos poner flex-center pero center es abreviado*/
+   .Justify-items-flex-end{  justify-items: end;} /*podemos poner flex-end pero end es abreviado*/
+   /*Pocisionar verticalmente*/
+   .align-items-flex-start {  align-items: start;}   /*podemos poner flex-start pero start es abreviado*/
+   .align-items-flex-center{  align-items: center;}  /*podemos poner flex-center pero center es abreviado*/
+   .align-items-flex-end   {  align-items: end;} /*podemos poner flex-end pero end es abreviado*/
+
+   .Grid-container2{     /*Con grid para el justiy items y align items*/
+        display: grid;   
+        grid-template-columns: repeat(3, 150px);      
+        grid-template-rows: repeat(3, 150px); 
+        border: 3px #000 solid;
+        background-color: #333;
+        grid-gap: 5px;
+        z-index: 10; 
+
+        grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+        grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+        grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/ 
+    }
+
+    .Grid-container3{     /*Con grid para el justiy items y align items*/
+        display: grid;   
+        grid-template-columns: repeat(3, 150px);      
+        grid-template-rows: repeat(3, 150px); 
+        border: 3px #000 solid;
+        background-color: #333;
+        grid-gap: 5px;
+        z-index: 10; 
+
+        grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+        grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+        grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/ 
+    }
+
+    .Grid-container4{     /*Con grid para el justiy items y align items*/
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);   
+        grid-template-rows: repeat(3, 1fr);   
+        grid-auto-rows: 1fr;   
+        grid-auto-columns: 1fr;
+        border: 3px #000 solid;
+        background-color: #333;
+        grid-gap: 5px;
+        z-index: 10; 
+        grid-auto-flow: dense;   
+     
+    }
+    
+
+   /*Posicionar horizontalmente*/
+   .Justify-content-flex-start{  justify-content: start;}   /*podemos poner flex-start pero start es abreviado*/
+   .Justify-content-flex-center{  justify-content: center;}  /*podemos poner flex-center pero center es abreviado*/
+   .Justify-content-flex-end{  justify-content: end;} /*podemos poner flex-end pero end es abreviado*
+   
+
+   /*Pocisionar verticalmente*/
+   .align-content-flex-start {  align-content: start;}   /*podemos poner flex-start pero start es abreviado*/
+   .align-content-flex-center{  align-content: center;}  /*podemos poner flex-center pero center es abreviado*/
+   .align-content-flex-end   {  align-content: end;} /*podemos poner flex-end pero end es abreviado*/
+
+    /*otras posicionar horizontalmente*/
+   .Justify-content-space-around{  justify-content: space-around;} /*se pocisiona todas las grillas alrededor*/
+   .Justify-content-space-between{  justify-content: space-between;} /*se pocisiona todas las grillas estan las lejos*/
+   .Justify-content-space-evenly{  justify-content: space-evenly;} /*se pocisiona todas las grillas tienen la misma distancia*/
+
+    /*otras pocisionar verticalmente*/
+   .align-content-space-around{  align-content: space-around;} /*se pocisiona todas las grillas alrededor*/
+   .align-content-space-between{  align-content: space-between;} /*se pocisiona todas las grillas estan las lejos*/
+   .align-content-space-evenly{  align-content: space-evenly;} /*se pocisiona todas las grillas tienen la misma distancia*/
+    
+
+   /*height para que se vean los align content */
+
+   .heigh{height: 600px;}
+   
+
+
+   
+   .Grid-item{ /*aqui mostramos como van a estar los items del grid es decir cada una de las cajas*/
+       border: 1px solid #000;
+       background-color: #999;
+       font-size: 30px;
+       padding: 10px;
+   }
+
+
+   .Grid-item1{ align-self: start; justify-self: start; background: red; }
+   .Grid-item3{ align-self: start; justify-self: end; background: red; }
+   .Grid-item4{ justify-self: end; }
+   .Grid-item5{ background: lightgreen; }
+   .Grid-item6{ justify-self: start; }
+   .Grid-item7{ place-self: end start; background: red; }
+   .Grid-item9{ align-self: end; justify-self: end; background: red; }
+
+  /*--------------------------------------------------------------------------------------------------------------------------------- -*/
+   /*vamos a modificar la primera grilla con color rojo y vamos a decir que ocupe de la linea 1 a la 3 en espacio que serian 
+   dos cajas*/
+   
+   
+   
+   
+   
+   
+   
+   
+   .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   
+   @media only screen and (max-width:600px){
+   
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       
+       /*Lo que le queramos cambiar*/
+       
+   }
+   
+   @media only screen and (max-width:300px){
+       
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+       
+   }

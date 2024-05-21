@@ -1,0 +1,170 @@
+
+body{
+ background: radial-gradient(circle, #52916e,#1d251b);/*Le damos un fondo diferente a la pagina*/
+}
+section{
+   margin: 0;
+}
+.background-containerImg{
+    background:url(../../ClasesAdicionales/img/fondo1.jpeg)
+     center;
+    background-size: cover;  
+}
+
+.Grid-container{    
+    display: grid;    
+    grid-template-columns:repeat(5, 100px) 100px;     
+    grid-template-rows: repeat(3, 100px);  
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap:10px;
+    z-index: 10; 
+}
+
+.Grid-container2{     /*Con grid implicito row*/
+    display: grid;   
+    grid-template-columns:repeat(5, 100px) 100px;      
+    grid-template-rows: repeat(3, 100px);
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap: 10px;
+    z-index: 10; 
+    /*Grid implicito con row*/
+    grid-auto-flow: row;   /*Esta propiedad esta por defecto en el grid implicito*/
+    grid-auto-rows: 400px; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 200px*/
+    
+}
+
+.Grid-container3{     /*Con grid implicito column*/
+    display: grid;   
+    grid-template-columns:repeat(5, 100px) 100px;      
+    grid-template-rows: repeat(3, 100px);
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap: 10px;
+    z-index: 10; 
+
+    grid-auto-flow: column;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+    grid-auto-columns: 400px; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 200px*/
+    
+}
+
+.Grid-container4{     /*Con grid implicito con atributo dense*/
+    display: grid;   
+    grid-template-columns:repeat(5, 100px) 100px;      
+    grid-template-rows: repeat(3, 100px);
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap: 10px;
+    z-index: 10; 
+
+    grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+    grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+    grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+    
+}
+
+.Grid-container5{     /*Con grid implicito con max-content*/
+    display: grid;   
+    grid-template-columns:repeat(3, max-content) ;      
+    grid-template-rows: repeat(3, 150px);
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap: 10px;
+    z-index: 10; 
+
+    grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+    grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+    grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/ 
+}
+
+.Grid-container6{     /*Con grid implicito con min-content*/
+    display: grid;   
+    grid-template-columns:repeat(3, min-content);      
+    grid-template-rows: repeat(3, 150px);
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap: 10px;
+    z-index: 10; 
+
+    grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+    grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+    grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/ 
+}
+
+
+.Grid-container7{     /*Con grid implicito con minmax*/
+    display: grid;   
+    grid-template-columns:repeat(3, minmax(min-content, 300px)); /*Minmax establecemos en minimo de contenido para que el texto baje*/  
+    grid-template-rows: repeat(3, 150px);
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap: 10px;
+    z-index: 10; 
+
+    grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+    grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+    grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/ 
+}
+
+
+.Grid-container8{     /*Con grid implicito con auto fil*/
+    display: grid;   
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));      /*con auto-fill hacemos que se vallan generando las columnas que pueda cumpliendo con las propiedades*/  
+    grid-template-rows: repeat(3, 100px);
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap: 5px;
+    z-index: 10; 
+
+    grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+    grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+    grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/ 
+}
+
+.Grid-container9{     /*Con grid implicito con auto fil*/
+    display: grid;   
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));      /*con auto-fill hacemos que se vallan generando las columnas que pueda cumpliendo con las propiedades*/  
+    grid-template-rows: repeat(3, 100px); 
+    border: 3px #000 solid;
+    background-color: #333;
+    grid-gap: 5px;
+    z-index: 10; 
+
+    grid-auto-flow: dense;   /*Esta funcion es para pasar de filas a columnas en el grid implicito*/
+    grid-auto-rows: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+    grid-auto-columns: 1fr; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/ 
+}
+
+
+.Grid-item{ /*aqui mostramos como van a estar los items del grid es decir cada una de las cajas*/
+    border: 1px solid #000;
+    background-color: #999;
+}
+/*vamos a modificar la primera grilla con color rojo y vamos a decir que ocupe de la linea 1 a la 3 en espacio que serian 
+dos cajas*/
+
+
+
+
+
+
+
+
+.nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+
+
+@media only screen and (max-width:600px){
+
+    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+    
+    /*Lo que le queramos cambiar*/
+    
+}
+
+@media only screen and (max-width:300px){
+    
+    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+    /*Lo que le queramos cambiar*/
+    
+}

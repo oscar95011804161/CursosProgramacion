@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
+	<link rel="stylesheet" type="text/css" href="css/styleTransition.css">
+	<title>Transition</title>
+</head>
+<body>
+
+
+	<div class="separador"></div>
+	<header>
+		<nav class="nav glass-effect">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"><a href="#inicio">inicio</a></li> 
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul> 
+			   <ul class="nav__responsive-ul">                                                  
+					<div class="nav__responsive-buttom-container"></div>                                   
+					<div class="nav__li-container glass-effect">  
+						<li class="nav__responsive-li"> <a href="#inicio">inicio</a></li>        								       
+						<li class="nav__responsive-li"> <a href="index.html">Volver a index</a></li>
+					</div>
+			   </ul>
+		</nav>
+	</header>
+
+	<section class="background-containerImg " >
+		
+		<h1 class="h1" id="inicio">Transition</h1>
+		<article class="glass-effect padding">
+			<br>
+			<p class="ColorBlanco ">
+				vamos a utilizar la funcion transition.<br>
+				Con esta funcion le decimos que alla una trancision cuando se apliquen a alguna propiedad<br></p>
+				<h1 class="h3">transition-property: background; </h1>
+			<p class="ColorBlanco ">
+				Aqui le decimos que se aplique una trancision a la propiedad background.
+			</p>
+			<h1 class="h3">transition-duration: 1s;</h1> 
+			<p class="ColorBlanco">Aqui le decimos a la caja que va a ver una trancision de 1 segundo.</p>	 
+			<h1 class="h3">El cambio de color lo hacemos con hover asi:</h1>    
+			<p class="ColorBlanco">.caja:hover{background-color: aqua;}</p>   
+			    
+
+			<div class="container">
+				<div class="caja"></div>
+			</div>
+	<!------------------------------------------------------------------------------------------------------------------------------------------------>
+			<h1 class="h3">transition-delay</h1>
+			<p class="ColorBlanco">
+				Con la propiedad transition delay hacemos que el se tarde en mostrar el transition ejemplo aqui 2 segundos<br>
+				transition-delay: 2s;<br>
+			</p>
+	<!------------------------------------------------------------------------------------------------------------------------------------------------>
+			<div class="container">
+				<div class="caja delay"></div>  <!--Para que nos muestre la propiedad delay-->
+			</div>
+
+			<h1 class="h2">transition-timing-function</h1>
+			<p class="ColorBlanco">
+				Con la propiedad transition-timing-function: <br>
+				Todas llegan al mismo tiempo la diferencia es que unas son mas rapidas que otras y las que estan apunto de llegar diminuyen su velocidad para llegar al 3 segundo.
+			</p>
+			
+			<div class="container2">
+				<div class="cajas linear">linear</div>  
+				<div class="cajas ease">ease</div>
+				<div class="cajas ease-in">ease-in</div>
+				<div class="cajas ease-out">ease-out</div>
+				<div class="cajas ease-in-out">ease-in-out</div>
+			</div>			
+			
+		</article>
+
+	</section>
+	<br>
+	<footer>
+		<div class="footer glass-effect">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+
+</body>
+</html>

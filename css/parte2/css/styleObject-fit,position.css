@@ -1,0 +1,185 @@
+
+*{font-family: 'arial', cursive; font-size: 20px; text-align: justify;}
+h1{text-align: center;color: brown; font-size: 60px;}
+.h1{text-align:justify; color: orange; font-size:50px;}
+h2{text-align: justify; font-size: 40px; color: green;}
+article{margin: 40px 60px;}
+
+.caja{ 
+    margin:25px;
+}
+
+.caja img{ 
+    width: 400px;
+}
+/*Contain------------------------------------------------------------------------------*/
+.caja1{
+    margin:20px;
+    width: 300px;
+    height: 400px;
+}
+
+.caja1 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: contain;
+}
+/*Cover ------------------------------------------------------------------------------*/
+/*Hace que la imagen se engrande en la mayoria de lo posible pero manteniendo la escala de resolucion*/
+.caja2{
+    margin:20px;
+    width: 300px;
+    height: 400px;
+}
+
+.caja2 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+}
+
+
+/*None--------------------------------------------------------------------------------*/
+
+.caja3{
+    margin:20px;
+    width: 300px;
+    height: 400px;
+}
+
+.caja3 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit:none;
+}
+
+/*Scale-Down--------------------------------------------------------------------------*/
+.caja4{
+    margin:20px;
+    width: 300px;
+    height: 400px;
+}
+
+.caja4 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: scale-down;
+}
+
+
+
+/*object position-----------------------------------------------------------------------------------------------------------------------*/
+
+/*Con object position cambiamos la pocision del objeto que entre caso es la imagen del dueño de platzi*/
+
+/*left--------------------------------------------------------*/
+.caja5{
+    margin:20px;
+    width: 300px;
+    height: 400px;
+}
+.caja5 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position:left;
+}
+
+/*Right------------------------------------------------------------*/
+.caja6{
+    margin:20px;
+    width: 300px;
+    height: 400px;
+}
+.caja6 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position:right;
+}
+
+/*Top------------------------------------------------------------*/
+.caja7{
+    margin:20px;
+    width: 300px;
+    height: 200px;
+
+    position: relative;
+}
+.caja7 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position:top;
+}
+
+/*bottom------------------------------------------------------------*/
+.caja8{
+    margin:20px;
+    width: 300px;
+    height: 200px;
+
+    position: relative;
+}
+.caja8 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position:bottom;
+}
+
+/*em------------------------------------------------------------*/
+
+
+/*2 em (right)*/
+.caja9{
+    margin:20px;
+    width: 300px;
+    height: 200px;
+
+}
+.caja9 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: 2em;
+}
+/*-3 em  (left)*/
+.caja10{
+    margin:20px;
+    width: 300px;
+    height: 200px;
+
+}
+.caja10 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: -3em;
+}
+/*  -2em 5em  (left, top)*/
+.caja11{
+    margin:20px;
+    width: 300px;
+    height: 200px;
+
+}
+.caja11 img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: -2em 5em;
+}
+
+

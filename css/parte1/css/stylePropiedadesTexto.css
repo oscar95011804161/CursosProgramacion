@@ -1,0 +1,21 @@
+/*Con el selector universal colocamos color de letra negro*/
+*{
+	color:black;
+}
+
+/*creamos una clase donde le damos al tamaño de la letra 25px*/
+.form{
+  font-size: 25px;
+}
+/*creamos una sub clase donde medimos en em por lo que 1em == 25px y 2em== 50px asi sucesivamente */
+.form__h2{
+	font-size: 2em;  /*Es el tamaño de la letra deacuerdo al font-size*/
+	font-family: Times new roman;  /*Font family permite editar el tipo de letra*/
+	color: red;
+
+
+	line-height:2;  /*Line-height es el espacio que ocupa la letra es decir si ponemos 1 es el normal si 
+	ponemos 2 va a ocupar +1 para arriba y 1+ para abajo adicional    (No es necesario ponerlo ya esta definido) */ 
+	font-weight: 700; /*Es el grosor de la letra 400 es sin grosor y 700 es con grosor  (No es necesario ponerlo ya esta definido)*/
+
+}

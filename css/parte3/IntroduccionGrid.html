@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
+	<link rel="stylesheet" type="text/css" href="css/styleIntroduccionGrid.css">
+	<title>Introduccion a Grid</title>
+</head>
+<body>
+	<div class="separador"></div>
+	<header>
+		<nav class="nav">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"> <a href="#inicio">Grid-container</a> </li> 
+				   <li class="nav__li"><a href="#2">Short-hand__Grid-grap</a> </li>
+				   <li class="nav__li"><a href="#">tema2</a> </li>
+				   <li class="nav__li"> <a href="#">ayuda</a> </li>
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul> 
+			   <ul class="nav__responsive-ul">                                                  
+				<div class="nav__responsive-buttom-container"></div>                                   
+				<div class="nav__li-container">          										 	
+					<li class="nav__responsive-li"> <a href="#inicio">Inicio</a> </li>              
+					<li class="nav__responsive-li"> <a href="#">Sobre nosotros</a> </li>
+					<li class="nav__responsive-li"> <a href="#">Gana dinero</a> </li>
+					<li class="nav__responsive-li"> <a href="#">Ayuda</a> </li>
+					<li class="nav__responsive-li"> <a href="index.html">Volver a index</a></li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+
+	<section>
+		<h1 class="h1" id="inicio">INTRODUCCIÓN A GRID</h1>
+
+		<p>Grid es un layout, es un valor del la propiedad display al igual que display block, display flex, display inline, etc</p>
+		<p>Cuando trabajamos con el grid trabajamos en el layout atravez de grillas </p>
+		<p class="h2">Conceptos basicos.</p>
+			<div class="conceptos">
+				<li>Grid container: igual a flex container</li>
+				<li>Grid item: son las grillas (las cajas) </li>
+				<li>Grid Cell </li>
+				<li>Grid Tracks(Column y Row):  </li>
+				<li>Grid area</li>
+				<li>Grid line(Column line y Row line)</li>
+			</div>
+				
+		<p>Esto es una grilla</p>
+		<img src="img/Grid/1.PNG">
+
+		<p>-Creamos las filas con:<br>
+		    grid-template-rows:<br>
+		   -Creamos las columnas con:<br>
+		    grid-template-columns:
+		</p>
+
+		<p>Para crearlas les damos un valor en pixeles asi:</p>
+		<p> grid-template-rows:120px 120px 120px;<br>
+		    grid-template-columns:120px 120px 120px;<br>
+		</p><br>
+
+		<h1 class="h2">Grid-container</h1>
+
+		<div class="Grid-containerEj1"> <!--Creamos un contenedor del grid como primer ejemplo-->
+			<div class="Grid-item">1</div>
+			<div class="Grid-item">2</div>
+			<div class="Grid-item">3</div>
+			<div class="Grid-item">4</div>
+			<div class="Grid-item">5</div>
+			<div class="Grid-item">6</div>
+			<div class="Grid-item">7</div>
+			<div class="Grid-item">8</div>
+			<div class="Grid-item">9</div>
+		</div>
+		<br>
+		<p>Si queremos que las la ultimas columnas se muevan las movemos con 1fr (Parecido a flex grow)</p>
+		<p> grid-template-rows:150px 150px 150px;<br>
+		    grid-template-columns:150px 150px 1fr;<br>
+		</p>
+		<br>
+		<div class="Grid-containerEj2"> <!--Creamos un contenedor del grid como primer ejemplo-->
+			<!--Vamos a poner los items de forma horizontal para ahorrar mas espacio-->
+			<div class="Grid-item">1</div>
+			<div class="Grid-item">2</div>
+			<div class="Grid-item">3</div>
+			<div class="Grid-item">4</div>
+			<div class="Grid-item">5</div>
+			<div class="Grid-item">6</div>
+			<div class="Grid-item">7</div>
+			<div class="Grid-item">8</div>
+			<div class="Grid-item">9</div>
+		</div>
+		<br>
+		<p>Ahora vamos a crear 12 Grid-item donde van a haber 3 filas y 4 columnas, vamos a hacer que todas las columnas tengan 1fr.</p>
+		<p>grid-template-rows:    150px 150px 150px; <br>  
+   		   grid-template-columns: 1fr   1fr   1fr 1fr; <br> 
+   		</p>
+   		<br>
+		<div class="Grid-containerEj3"> <!--Creamos un contenedor del grid como ejemplo-->
+			<div class="Grid-item">1</div>
+			<div class="Grid-item">2</div>
+			<div class="Grid-item">3</div>
+			<div class="Grid-item">4</div>
+			<div class="Grid-item">5</div>
+			<div class="Grid-item">6</div>
+			<div class="Grid-item">7</div>
+			<div class="Grid-item">8</div>
+			<div class="Grid-item">9</div>
+			<div class="Grid-item">10</div>
+			<div class="Grid-item">11</div>
+			<div class="Grid-item">12</div>
+			
+		</div>
+		<br>
+		<h1 class="h2" id="2"> Grid-container__Shord-hand Grid-gap</h1>
+		<h1 class="h3"> grid-row-gap:</h1>
+		<p>Vamos a utilizar en el gridContainer la propiedad grid-row-gap: 10px; <br>  
+   		  los 10 px son la separacion Esta propiedad permite establecer un margen entre cada fila de 10px <br> 
+   		</p>
+   		<br>
+		<div class="Grid-containerEj4"> <!--Creamos un contenedor del grid como ejemplo-->
+			<div class="Grid-item">1</div>
+			<div class="Grid-item">2</div>
+			<div class="Grid-item">3</div>
+			<div class="Grid-item">4</div>
+			<div class="Grid-item">5</div>
+			<div class="Grid-item">6</div>
+		</div>
+		<br>
+		<h1 class="h3">grid-column-gap</h1>
+		<p>Vamos a utilizar en el gridContainer la propiedad grid-column-gap: 10px; <br>  
+   		  los 10 px son la separacion Esta propiedad permite establecer un margen entre cada columna de 10px <br> 
+   		</p>
+   		<br>
+		<div class="Grid-containerEj5"> <!--Creamos un contenedor del grid como ejemplo-->
+			<div class="Grid-item">1</div>
+			<div class="Grid-item">2</div>
+			<div class="Grid-item">3</div>
+			<div class="Grid-item">4</div>
+			<div class="Grid-item">5</div>
+			<div class="Grid-item">6</div>
+			<div class="Grid-item">7</div>
+			<div class="Grid-item">8</div>
+			<div class="Grid-item">9</div>
+		</div>
+		<br>
+		<h1 class="h3">grid-gap</h1>
+		<p>Para convinar ambas propiedades escribimos grid-gap: 10px; <br>  
+   		  los 10 px son la separacion con esta propiedad separamos filas y columnas con un margen de 10px<br> 
+   		</p>
+   		<br>
+		<div class="Grid-containerEj6"> <!--Creamos un contenedor del grid como ejemplo-->
+			<div class="Grid-item">1</div>
+			<div class="Grid-item">2</div>
+			<div class="Grid-item">3</div>
+			<div class="Grid-item">4</div>
+			<div class="Grid-item">5</div>
+			<div class="Grid-item">6</div>
+			<div class="Grid-item">7</div>
+			<div class="Grid-item">8</div>
+			<div class="Grid-item">9</div>
+			<div class="Grid-item">10</div>
+			<div class="Grid-item">11</div>
+			<div class="Grid-item">12</div>
+		</div>
+		<br>
+
+
+
+
+	</section>
+
+	<footer>
+		<div class="footer">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+</body>
+</html>

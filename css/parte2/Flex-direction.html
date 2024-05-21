@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/styleFlex-direction.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!--<script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>--> <!--Con esto traemos el icono-->
+
+	<title>flex-direction</title>
+</head>
+<body>
+	<div class="separador"></div>
+	<header>
+		<nav class="nav">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"> <a href="#">Inicio</a> </li> 
+				   <li class="nav__li"><a href="#">Sobre nosotros</a> </li>
+				   <li class="nav__li"><a href="#">Gana dinero</a> </li>
+				   <li class="nav__li"> <a href="#">Ayuda</a> </li>
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul>
+		</nav>
+	</header>
+
+	<section>
+		<h1>FLEX-DIRECTION</h1>
+
+		<article>
+			<p>Para cambiar la forma de main axis por cross axis lo realizamos con la propiedad flex-direction. Esta propiedad al igual que display flex hace parte del flex-container.</p><br>
+			<img src="img/DisplayFlex/Main-CrossAxis.PNG">
+
+			<h1 class="h1">Alinear en el main axis.</h1>
+			<p>Dentro de las propiedades de flex-direction tenemos a: </p>
+
+			<li><b>row:</b> es como dejar flex-direction por defecto como esta en la imagen.</li> 
+
+			<div class="flex-container1">
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+			</div>
+
+			<li><b>column:</b> Los elementos se comportan en forma de columna.<br> Aqui vemos como cambian los elementos del main axis se comportan en forma de columna.</li>
+			
+			<div class="flex-container2">
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>	
+			</div>
+			<h2>Reverse</h2>
+			<li><b>row-reverse:</b> creamos una clase para el primer item para distinguirlo con naranja. <br> Ahora utilizamos la propiedad row-reverse, que es parecido al row pero invertido y hace que los objetos vallan de derecha a izquierda.</li>
+			
+			<div class="flex-container3">
+				<div class="flex-item orange"></div> <!--Colocando orange por separado es como si colocaramos otra clase-->
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+			</div>
+
+			<li> <b>colum-reverse:</b> es igual al column pero invertido y hacemos que valla de abajo para arriba.</li>
+			
+			<div class="flex-container4">
+				<div class="flex-item orange"></div> 
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+				<div class="flex-item"></div>
+			</div>
+			<h2>Wrap</h2>
+			<li> <b>flex wrap:</b> Mantener resolucion y que se vallan de para abajo.</li>
+
+			<div class="flex-container5">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>flex wrap-reverse:</b> Mantener resolucion y que se vallan de para arriba.</li>
+
+			<div class="flex-container6">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<h2>Justify-content</h2>
+			justify-content: Utilizamos esta instruccion junto a atributos como <br> center, space-around, space-between, space-evenly (main axis) para alinear nuestras cajas.</li>
+
+			<li> <b>Justify-content: center: </b> es utilizado para centrar las cajas como text aligh: center. </li>
+			<div class="flex-container7">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>Justify-content: space-around: </b> es utilizado para ceparar las cajas es como margin auto. </li>
+			<div class="flex-container8">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>Justify-content: space-between: </b> es igual a space around la diferencia es que separa las cajas en la mayor medida de lo posible. </li>
+			<div class="flex-container9">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>Justify-content: space-evenly: </b> Es la mejora de space around y between ya que alinea las cajas de modo en que todas queden de las misma medida. </li>
+			<div class="flex-container10">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+		</article>
+
+		<article>
+			<h1 class="h1">Alinear en el cross-axis.</h1>
+			<img src="img/DisplayFlex/Main-CrossAxis.png">
+			<li> Tiene las siguientes instruciones con las siguientes propiedades.</li>
+			<p></p>
+			<li> <b>aligh-items: </b> flex-start, center, flex-end, stretch, baseline (cross axis) se usa cuando hay una linea de items.
+			</li>
+			<li> <b>aligh-content:  </b> se usa para cuando hay mas de una linea de items.</li>
+
+			<h2>Aligh-items</h2>
+			<li> <b>aligh-items: center  </b> se usa para alinear en el centro del eje "y" los items.</li>
+			<div class="flex-container11">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>aligh-items: end  </b> se usa para alinear en el final del eje "y" los items.</li>
+			<div class="flex-container12">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>aligh-items: baseline  </b> se usa para alinear a la  base del eje "y" los items.</li>
+			<div class="flex-container13">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>aligh-items: stretch  </b> Es la propiedad por defecto para ver cambios quitamos el height de todos los flex-items. <br>Se nos estira como se nos estiro la imagen del cacheton de platzi Para solucionar esto se usa flex-start.
+			</li>
+			<div class="flex-container14">
+				<div class="flex-item-sinHeight orange">caja flexible primera</div> 
+				<div class="flex-item-sinHeight">caja flexible</div>
+				<div class="flex-item-sinHeight">caja flexible</div>
+				<div class="flex-item-sinHeight">caja flexible</div>
+				<div class="flex-item-sinHeight">caja flexible</div>
+				<div class="flex-item-sinHeight green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>aligh-items: flex-start </b> esta propiedad funciona sin el height al igual que stretch, esta caja se ajusta a su contenido.
+			</li>
+			<div class="flex-container15">
+				<div class="flex-item-sinHeight orange">caja flexible primera</div> 
+				<div class="flex-item-sinHeight">caja flexible</div>
+				<div class="flex-item-sinHeight">caja flexible</div>
+				<div class="flex-item-sinHeight">caja flexible</div>
+				<div class="flex-item-sinHeight">caja flexible</div>
+				<div class="flex-item-sinHeight green">caja flexible ultima</div>
+			</div>
+
+		</article>
+
+		<article>
+			<h2>Aligh-content</h2>
+			<li> <b>aligh-content:  </b> se usa para cuando hay mas de una linea de items donde la diferencia de alight-items es que este une mas los elementos de las otras filas en cambio alight items los separa (se usa el wrap para mandar para abajo los items).</li>
+
+			<li> <b>aligh-content: flex-start.</b> 
+			<div class="flex-container16">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>aligh-content: flex-end.</b> 
+			<div class="flex-container17">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+			<li> <b>aligh-content: baseline (aqui es donde mas se usa baseline). Con wrap-reverse</li>
+				<div class="flex-container18">
+				<div class="flex-item orange">caja flexible primera</div> 
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item">caja flexible</div>
+				<div class="flex-item green">caja flexible ultima</div>
+			</div>
+
+		</article>
+		
+	<br><br> <br><br>		
+	</section>
+
+	<footer>
+		<div class="footer">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+    background-color: #2e2727;  
+}
+section{
+   margin: 0;
+}
+
+.container{
+   filter: contrast(20);    
+   background-color: #fff;   /*fondo blanco para que no se vea opaco*/
+}
+
+.caja{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 40px;
+    border-radius: 50%;
+    filter: blur(10px); /*Hace el efecto de pegarse y despegarse*/
+    
+}
+
+.caja:first-child{
+    animation: trasladar 1.6s alternate infinite; /*hace que el primer circulo se muesva */
+}
+
+@keyframes trasladar{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(160px);
+    }
+
+
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+    .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   @media only screen and (max-width:600px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+          
+       /*Lo que le queramos cambiar*/
+      
+   }
+   @media only screen and (max-width:380px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+   }

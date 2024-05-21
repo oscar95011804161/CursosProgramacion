@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
+	<link rel="stylesheet" type="text/css" href="css/styleTransform.css">
+	<title>Transform</title>
+</head>
+<body>
+
+
+	<div class="separador"></div>
+	<header>
+		<nav class="nav glass-effect">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"><a href="#inicio">traslate</a></li>  
+				   <li class="nav__li"><a href="#1">scale</a></li> 
+				   <li class="nav__li"><a href="#2">skew</a></li>
+				   <li class="nav__li"><a href="#3">clic path </a></li>
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul> 
+			   <ul class="nav__responsive-ul">                                                  
+					<div class="nav__responsive-buttom-container"></div>                                   
+					<div class="nav__li-container glass-effect">  
+
+					   <li class="nav__responsive-li"><a href="#inicio">traslate</a></li>  
+					   <li class="nav__responsive-li"><a href="#1">scale</a></li> 
+					   <li class="nav__responsive-li"><a href="#2">skew</a></li>
+					   <li class="nav__responsive-li"><a href="#3">clic path </a></li>
+					   <li class="nav__responsive-li"><a href="index.html">Volver a index</a></li>
+
+					</div>
+			   </ul>
+		</nav>
+	</header>
+
+	<section class="background-containerImg " >
+		
+		<h1 class="h1" id="inicio">Transform</h1>
+		<article class="glass-effect padding">
+
+			<p class="ColorBlanco marginText">
+			Transform es una propiedad que nos permite transformar el objeto resiven funciones.
+			</p>
+
+
+			<h1 class="h2">Traslate</h1>
+			 <p class="ColorBlanco marginText"> Dentro de la primera propiedad tenemos traslate donde la podemos modificar en el eje X y eje Y hasta donde queramos.</p>
+			
+
+				<div class="container">  <div class="caja"> <b>Sin modificar</b></div> </div> <br>
+				<p class="ColorBlanco">Aqui no lo modificamos</p> 	<br>
+				<div class="container">  <div class="caja traslateX"> <b>TraslateX</b></div> </div><br>
+				<p class="ColorBlanco"> Con esta propiedad lo movemos  a la derecha 50px en el eje x</p> 	<br>
+				<div class="container">  <div class="caja traslate-X"> <b>Traslate-X</b></div> </div><br>
+				<p class="ColorBlanco">Con esta propiedad lo movemos  a la izquierda 50px en el eje x</p> 	<br>
+				<div class="container">  <div class="caja traslateY"> <b>TraslateY</b></div> </div>	<br>
+				<p class="ColorBlanco">Con esta propiedad lo movemos  a abajo 50px en el eje Y</p> <br>
+				<div class="container">  <div class="caja traslate-Y"> <b>Traslate-Y</b></div> </div>	<br>
+				<p class="ColorBlanco">Con esta propiedad lo movemos  a arriba 50px en el eje Y</p>  <br>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------->
+			<h1 class="h2" id="1" >Scale</h1>
+
+			<p class="ColorBlanco marginText"> Con esta propiedad modificamos el anchor y la altura del objeto.</p>
+
+				<div class="container">  <div class="caja1 scaleX"> <b>escala X</b></div> </div> <br>
+				<p class="ColorBlanco">Con esta propiedad modificamos el tamaño del eje X</p><br>
+
+				<div class="container">  <div class="caja2 scaleY"> <b>escala Y</b></div> </div> <br>
+				<p class="ColorBlanco">Con esta propiedad modificamos el tamaño del eje Y</p><br>
+
+
+			<p class="ColorBlanco"> Para ver los cambios en con transition utilisamos transition transform en hover eje X.</p>	
+				<div class="container">  <div class="caja1 transition">tocar X  <b></b></div> </div> <br>
+				<p class="ColorBlanco">transition aplicado al transform en hover</p><br>
+		
+			<p class="ColorBlanco"> Para ver los cambios en con transition utilisamos transition transform en hover eje Y.</p>	
+				<div class="container">  <div class="caja2 transition">tocar Y  <b></b></div> </div> <br>
+				<p class="ColorBlanco">transition aplicado al transform en hover</p><br>
+
+			
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+			
+			<h1 class="h2" id="2" >Skew</h1>
+
+			<p class="ColorBlanco"> Es un elemento del hover utilizado para deformar la caja .</p>	<br>
+				<div class="container">  <div class="caja3">tocar skew <b></b></div> </div> <br>
+				
+			<p class="ColorBlanco"> Como podemos ver el texto se deforma al movimiento por lo que vamos a hacer un objeto vectorizada.
+				 Un objeto vectorizado a medida que se engranda el objeto aumentan los pixeles para que no pierda calidad  .</p>	<br>
+	<p class="ColorBlanco">---------------------------------------------------------------------------------------------------------------------------</p><br>
+			<p class="ColorBlanco">Aqui aplicamos el skew al texto para enderezarlo y a la caja para cambiarla de forma</p><br>
+				<div class="container">  <div class="caja4"> <b class="b">skew</b></div> </div> <br>
+
+
+			<h1 class="h2" id="3">Clic path generator</h1>	
+			<p class="ColorBlanco"> Con clic path podemos generar formas para nuestros objetos .</p><br>
+			<p class="ColorBlanco"> pagina oficial .</p><br>
+			
+			<a href="https://www.cssportal.com/css-clip-path-generator/">clic path generator pagina</a> <br><br>
+			
+
+			<p class="ColorBlanco"> Triangulo <br> clip-path: polygon(50% 0%, 0% 100%, 100% 100%);</p><br>
+			<div class="container">  <div class="objeto triangulo"> </div> </div> <br>
+
+			<p class="ColorBlanco"> Circulo <br> clip-path: circle(50% at 50% 50%);</p><br>
+			<div class="container">  <div class="objeto circulo"> </div> </div> <br>
+
+			<p class="ColorBlanco"> mensaje <br> clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);</p><br>
+			<div class="container">  <div class="objeto mensaje"> </div> </div> <br>
+
+			<p class="ColorBlanco"> flecha derecha <br> clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);</p><br>
+			<div class="container">  <div class="objeto flechaRight"> </div> </div> <br>
+
+			<p class="ColorBlanco"> cruz<br> clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);</p><br>
+			<div class="container">  <div class="objeto cruz"> </div> </div> <br>
+
+			
+			<p class="ColorBlanco"> rombo<br> clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);</p><br>
+			<div class="container">  <div class="objeto rombo"> </div> </div> <br>
+				
+			
+		</article>
+
+	</section>
+	<br>
+	<footer>
+		<div class="footer glass-effect">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+
+</body>
+</html>

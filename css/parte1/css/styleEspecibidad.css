@@ -1,0 +1,123 @@
+
+
+/*Css Especibidad*/
+/*La especibidad se rigue por 2 normas la primera es la norma de cascada  que es donde hay 3 elementos 
+por ejemplo tipo etiqueta va a tomar el que se encuentre mas abajo asi*/
+
+/*1 Tema*/
+/*Cascada*/
+h1{
+	color: blue;
+}
+
+h1{
+	color:yellow;
+}
+
+h1{
+	color: red;
+}
+
+/*Como vemos le dio prioridad al de mas abajo*/
+
+/*2 Tema*/
+/*Jerarquia*/
+/*Por jerarquia va de la siguiente manera
+
+1 clase
+2 etiqueta
+3 universal
+
+
+aqui no importa que este mas abajo o arriba lo que importa es que clase tiene mas jerarquia que etiqueta y universal por eso 
+se aplicara la clase 
+*/
+.ColorBlue{
+	color:blue;
+
+}
+
+h2{
+	color: red;
+}
+
+* {
+	color:black;
+}
+/*3 Tema*/
+/*Jerarquia Iguales*/
+
+/*
+1 clase, atributo
+2 etiqueta
+3 universal
+*/
+
+/*Aqui vemos que entre clase y atributo tienen la misma jerarquia por lo que se aplica la especibidad por cascada */
+.ColorBlack{             /*Clase*/
+	color:black
+
+}
+
+[atributo="color"]{     /*Atributo*/
+	color: green
+}
+
+/*4 Tema*/
+/*Jerarquias superiores*/
+
+/*
+
+1 ID
+2 Clase, atributo
+3 Etiqueta
+4 Universal
+*/
+
+#colorId{
+	color: purple
+}
+
+.ColorBlack{             /*Clase*/
+	color:black
+
+}
+
+[atributo = "color"]{     /*Atributo*/
+	color: green
+}
+
+/*5 Tema*/
+/*Jerarquias superiores*/
+/*
+
+ 1Estilo en linea
+ 2ID
+ 3Clase, atributo
+ 4Etiqueta
+ 5Universal
+*/
+
+/*El estilo en linea se coloca en html por lo que para ver el cambio lo vemos en el tema 5 de html*/
+
+
+/*6 Tema*/
+/*Jerarquias superiores*/
+/*
+ 1Important
+ 2Estilo en linea
+ 3ID
+ 4Clase, atributo
+ 5Etiqueta
+ 6Universal
+ 7pseudo clase
+*/
+
+/*Aqui colocamos importan en como primera prioridad y pseudo clase el la ultima y menos importante*/
+
+/*En el tema 6 lo vamos a poner con etiqueta h4 y con clase,id,atributo, estilo en linea en html y veremos important manda*/
+
+h4{
+	color:lightblue !important
+}
+

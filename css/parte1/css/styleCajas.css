@@ -1,0 +1,34 @@
+
+*{
+	color:black;
+	font-family: Times new roman;  
+}
+
+h1{
+	color:red;
+	background-color: black; /*Con background coloreamos toda la caja de h1*/
+
+}
+
+.h1{
+	display:inline-block; /*es parecido al display inline pero a diferencia del anterior 
+	este respeta el espacio de otro bloque*/
+}
+
+h2{
+	display: inline; /*el display puede tener 2 opciones   display:block  y display:inline 
+	en bloque usa todo el reglon y inline permite usa lo que necesite del reglon  */
+	height: 400px;
+	width: 190px;
+	background-color: green;
+}
+
+p{
+	display: inline;
+    height: 400px;
+    width: 190px;
+}
+h3{
+	background-color: red; 
+}
+

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "raaOM0wjrt0AsNSMst5vA6l5GVW1uY1+1l/eYs1zC7ntUitP3cBtv01DE/QJoW294bF8TkRKKwfUh643IQsVzQ==",
+  "success": true,
+  "projectFilePath": "C:\\xampp\\cursos\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\login.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oscar\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.0\\microsoft.netcore.app.runtime.win-x86.8.0.0.nupkg.sha512",
+    "C:\\Users\\oscar\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.0\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.0.nupkg.sha512",
+    "C:\\Users\\oscar\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.0\\microsoft.aspnetcore.app.runtime.win-x86.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

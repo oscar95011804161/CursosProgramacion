@@ -1,0 +1,17 @@
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\bin\Debug\net8.0-windows\linux-arm\login
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\bin\Debug\net8.0-windows\linux-arm\login.deps.json
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\bin\Debug\net8.0-windows\linux-arm\login.runtimeconfig.json
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\bin\Debug\net8.0-windows\linux-arm\login.dll
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\bin\Debug\net8.0-windows\linux-arm\login.pdb
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\WinFormsApp.Formulario1.resources
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.Properties.Resources.resources
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.csproj.GenerateResource.cache
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.AssemblyInfoInputs.cache
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.AssemblyInfo.cs
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.csproj.CoreCompileInputs.cache
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.dll
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\refint\login.dll
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.pdb
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\login.genruntimeconfig.cache
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\obj\Debug\net8.0-windows\linux-arm\ref\login.dll

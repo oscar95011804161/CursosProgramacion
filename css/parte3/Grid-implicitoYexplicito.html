@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
+	<link rel="stylesheet" type="text/css" href="css/styleGrid-implicitoYexplicito.css">
+	<title>Grid implicito y explicito</title>
+</head>
+<body  >
+	<div class="separador"></div>
+	<header>
+		<nav class="nav glass-effect">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"> <a href="#1">inicio</a> </li> 
+				   <li class="nav__li"><a href="#2">Grid dinamico</a> </li>
+				   <li class="nav__li"><a href="#3">Cantidades: auto-fill y auto-fit</a> </li>
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul> 
+			   <ul class="nav__responsive-ul">                                                  
+					<div class="nav__responsive-buttom-container"></div>                                   
+					<div class="nav__li-container glass-effect">          										 	
+						<li class="nav__responsive-li"> <a href="#1">inicio</a> </li>              
+						<li class="nav__responsive-li"> <a href="#2">Grid dinamico</a> </li>
+						<li class="nav__responsive-li"> <a href="#3">Gana dinero</a> </li>
+						<li class="nav__responsive-li"> <a href="index.html">Volver a index</a></li>
+					</div>
+			   </ul>
+		</nav>
+	</header>
+
+	<section class="background-containerImg" >
+	
+
+			<h1 class="h1" id="1">GRID IMPLICITO Y EXPLICITO</h1>
+		<article class="glass-effect padding marginText ">
+			<br>
+
+				<p class="ColorBlanco">Cuando trabajamos con CSS Grid, es posible definir la grilla de dos maneras: explícita e implícita. <br> Cada vez que nosotros definimos la cantidad de columnas o filas que tendrá la grilla, sin importar que tamaño tengan, estamos definiendo el grid de manera explícita, como en el ejemplo que puedes ver a continuación donde definimos que la grilla tendrá 12 columnas que se dividen el espacio equitativamente:<br><br>
+				grid-template-columns: repeat(12,1fr);<br><br>
+				Suponiendo que colocamos más de 12 elementos de la grilla, superando la cantidad de columnas establecidas. En dicho escenario, se creará una nueva fila para colocar los elementos que no cupieron en la primera fila. Esta segunda fila no fue definida explícitamente, por lo que se considera parte del grid implícito.<br><br>
+
+				Dentro de las 3 nuevas propiedades del grid implicito tenemos:<br>
+				grid-auto-rows:(igual que el templete)<br>
+				grid-auto-columns(igual que el templete)<br>
+				grid-auto-flow Row(Default), Column y Dense<br>
+
+				</p>
+
+				<img src="img/Grid/GridExplicito.PNG">
+				<br>
+					
+				<h1 class="h3">Grid explicito</h1>
+			<div class="Grid-container"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+				<div class="Grid-item">10</div>
+				<div class="Grid-item">11</div>
+				<div class="Grid-item">12</div>
+				<div class="Grid-item">13</div>
+				<div class="Grid-item">14</div>
+				<div class="Grid-item">15</div>
+				<div class="Grid-item">16</div>
+				<div class="Grid-item">17</div>
+				<div class="Grid-item">18</div>
+				<div class="Grid-item">19</div>
+				<div class="Grid-item">20</div>
+				<div class="Grid-item">21</div>
+			</div>
+			<br>
+				<h1 class="h3">Grid implicito con row</h1>
+			<div class="Grid-container2"> 
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+				<div class="Grid-item">10</div>
+				<div class="Grid-item">11</div>
+				<div class="Grid-item">12</div>
+				<div class="Grid-item">13</div>
+				<div class="Grid-item">14</div>
+				<div class="Grid-item">15</div>
+				<div class="Grid-item">16</div>
+				<div class="Grid-item">17</div>
+				<div class="Grid-item">18</div>
+				<div class="Grid-item">19 rows</div>
+				<div class="Grid-item">20 rows</div>
+				<div class="Grid-item">21 rows </div>
+			</div>
+			<br>
+
+			<h1 class="h3">Grid implicito con columns</h1>
+			<div class="Grid-container3"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+				<div class="Grid-item">10</div>
+				<div class="Grid-item">11</div>
+				<div class="Grid-item">12</div>
+				<div class="Grid-item">13</div>
+				<div class="Grid-item">14</div>
+				<div class="Grid-item">15</div>
+				<div class="Grid-item">16</div>
+				<div class="Grid-item">17</div>
+				<div class="Grid-item">18</div>
+				<div class="Grid-item">19 columns</div>
+				<div class="Grid-item">20 columns</div>
+				<div class="Grid-item">21 columns</div>
+			</div>
+			<br>
+			<p class="ColorBlanco">Imagen sin atributo dense</p>
+			<img src="img/Grid/dense.PNG"><br>
+
+
+
+			<h1 class="h3">grid-auto-flow: dense</h1>
+			<p class="ColorBlanco">La propiedad grid-auto-flow: dense nos permite rellenar los espacios</p>
+			<div class="Grid-container4"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+				<div class="Grid-item">10</div>
+				<div class="Grid-item">11</div>
+				<div class="Grid-item">12</div>
+				<div class="Grid-item">13</div>
+				<div class="Grid-item">14</div>
+				<div class="Grid-item">15</div>
+				<div class="Grid-item">16</div>
+				<div class="Grid-item">17</div>
+				<div class="Grid-item">18</div>
+				<div class="Grid-item">19 </div>
+				<div class="Grid-item">20 </div>
+				<div class="Grid-item">21 </div>
+			</div>
+			<br>
+
+			<h1 class="h2" id="2">Grid dinamico</h1>
+			<p class="ColorBlanco">El grid dinamico trabaja con estructuras como: </p>
+				<ul class="marginText ColorBlanco"> 
+					<li>minmax()</li>
+					<li>mincontent</li>
+					<li>max-content</li>
+				</ul>
+				<p class="ColorBlanco">Cantidad:</p> 
+				<ul class="marginText ColorBlanco">
+					<li>auto-fill:</li>
+					<li>auto-fit:</li>
+				</ul>
+
+			<h1 class="h3">max-content</h1>
+			<p class="ColorBlanco">Quiere decir que el contenido que se encuentra en la caja (3) ocupara todo el reglon sin bajarse el texto (por lo general el max content no es muy utilizado a diferencia de su contraparte el min-content.</p><br>
+			<div class="Grid-container5"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3 Lorem ipsum dolor sit amet, consectetur .</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+			</div>
+			<br>
+			<h1 class="h3">min-content</h1>
+			<p class="ColorBlanco">Quiere decir que el contenido que se encuentra en la caja (3) ocupara el minimo espacio posible.</p><br>
+			<div class="Grid-container6"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3 Lorem ipsum dolor sit amet, consectetur .</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+			</div>
+			<br>
+			<h1 class="h3">minmax()</h1>
+			<p class="ColorBlanco">min-content para que utilice el minimo espacio posible en el texto y para que establezca un maximo de 300px en las cajas.<br>  grid-template-columns:repeat(3, minmax(min-content, 200px));<br><br>
+			(Nota lo podemos reducir e incrementar). </p>
+			<div class="Grid-container7"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3 Lorem ipsum dolor sit amet, consectetur .</div>
+				<div class="Grid-item">4</div>
+				<div class="Grid-item">5</div>
+				<div class="Grid-item">6</div>
+				<div class="Grid-item">7</div>
+				<div class="Grid-item">8</div>
+				<div class="Grid-item">9</div>
+			</div>
+			<br>
+
+			<h1 class="h2" id="3">Cantidades: auto-fill y auto-fit </h1>
+			<h1 class="h3">auto-fill </h1>
+			<p class="ColorBlanco marginText">auto-fill es utilizado para que se ajusten los espacios y sigan generando espacios a medida que crezca la pagina.</p>
+			<div class="Grid-container8"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3 Lorem ipsum dolor sit amet.</div>
+			</div>
+			<br>
+
+			<h1 class="h3">autofit </h1>
+			<p class="ColorBlanco marginText"> A diferencia de auto-fill este utiliza el espacio disponible y no sigue generando. </p>
+			<div class="Grid-container9"> <!--Creamos un contenedor del grid como ejemplo-->
+				<div class="Grid-item">1</div>
+				<div class="Grid-item">2</div>
+				<div class="Grid-item">3 Lorem ipsum dolor sit amet.</div>
+			</div>
+			<br>
+
+		</article>
+				
+
+	</section>
+
+	<footer>
+		<div class="footer glass-effect">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+</body>
+</html>

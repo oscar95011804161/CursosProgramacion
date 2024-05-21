@@ -1,0 +1,96 @@
+body{
+    background: radial-gradient(circle, #991065,#2c222e);   
+}
+section{
+   margin: 0;
+}
+
+.container{
+    background: #121116;
+    padding: 30px 5px;
+    width: 200px;
+    height:200px;
+    margin: 40px;    
+}
+
+
+
+.container2{
+    padding: 30px;
+    background: #398; 
+    width: 400px;
+    height:300px;
+    margin: 80px;  
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7t4JlhrklVfPLws-tb0lH1SPi-pZ18Pegjg&usqp=CAU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    
+    border: 10px solid transparent;
+}
+
+
+
+.image{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7t4JlhrklVfPLws-tb0lH1SPi-pZ18Pegjg&usqp=CAU);}
+.size{background-size: 50%;}
+.contain{background-size:contain;}
+.no-repeat{background-repeat: no-repeat;}
+.cover{background-size: cover;}
+.border{border: 10px solid transparent;}
+.positionR-B{background-position:right bottom;}
+.positionR-T{background-position:right top;}
+.positionL-T{background-position:left top;}
+.positionL-B{background-position:left bottom;}
+.positionR-C{background-position:right center;}
+.positionL-C{background-position:left center;}
+.positionC-C{background-position:center center;}
+.positionC-T{background-position:center top;}
+.positionC-B{background-position:center bottom;}
+
+
+.container3{ /*background-attachment*/
+    padding: 30px;
+    background: #398; 
+    width: 100%;
+    height:300px ;
+    background-image: url(https://live.staticflickr.com/8241/8629475232_54ac74195a_b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   @media only screen and (max-width:600px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+          
+       /*Lo que le queramos cambiar*/
+      
+   }
+   @media only screen and (max-width:380px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+   }

@@ -1,0 +1,23 @@
+*{
+	
+	font-family: 'lobuster',cursive;
+	font-weight: 100;
+	font-size: 40px;  /*Este es el tamaño de la letra*/
+}
+
+nav{
+	padding-top: -100px; /*Con esto bajamos o subimos el nav*/
+}
+body{
+	padding-top: 100px;  /*Con esto bajamos o subimos el body*/
+}
+.caja-fixed{
+	background-color: blue;
+	position:fixed; /*Posicion fixed*/
+	opacity: .4 ; /*Le damos un reflejo a la caja*/
+	margin: -150px; /*con el margin movemos la caja*/
+	margin-left: 0px; /*Centramos la caja un poco*/
+}
+
+
+

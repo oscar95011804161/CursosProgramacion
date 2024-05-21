@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
+	<link rel="stylesheet" type="text/css" href="css/styleVariablesYfilter.css">
+	<title>Variables y filter</title>
+</head>
+<body>
+
+
+	<div class="separador"></div>
+	<header>
+		<nav class="nav glass-effect">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"><a href="#inicio">inicio</a></li>  
+				   <li class="nav__li"><a href="#1">variables</a></li>  
+				   <li class="nav__li"><a href="#2">filter</a></li>  
+				   <li class="nav__li"><a href="#3">filter brightness</a></li>
+				   <li class="nav__li"><a href="#4">filter contrast</a></li> 
+				   <li class="nav__li"><a href="#5">drop-shadow</a></li>  
+				   <li class="nav__li"><a href="#6">grayscale</a></li>  
+				   <li class="nav__li"><a href="#7">hue-rotate</a></li>  
+				   <li class="nav__li"><a href="#8">invert</a></li>  
+				   <li class="nav__li"><a href="#9">opacity</a></li>  
+				   <li class="nav__li"><a href="#10">saturate</a></li>  
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul> 
+			   <ul class="nav__responsive-ul">                                                  
+					<div class="nav__responsive-buttom-container"></div>                                   
+					<div class="nav__li-container glass-effect">  
+
+					   <li class="nav__responsive-li"><a href="#inicio">inicio</a></li>  
+					   <li class="nav__responsive-li"><a href="#1">variables</a></li>  
+					   <li class="nav__responsive-li"><a href="#2">filter</a></li>  
+					   <li class="nav__responsive-li"><a href="#3">filter brightness</a></li>
+					   <li class="nav__responsive-li"><a href="#4">filter contrast</a></li>
+					   <li class="nav__responsive-li"><a href="#5">drop-shadow</a></li>    
+					   <li class="nav__responsive-li"><a href="#6">grayscale</a></li>  
+					   <li class="nav__responsive-li"><a href="#7">hue-rotate</a></li>  
+					   <li class="nav__responsive-li"><a href="#8">invert</a></li>  
+					   <li class="nav__responsive-li"><a href="#9">opacity</a></li>  
+					   <li class="nav__responsive-li"><a href="#10">saturate</a></li>  					   
+					   <li class="nav__responsive-li"><a href="index.html">Volver a index</a></li>
+
+					</div>
+			   </ul>
+		</nav>
+	</header>
+
+	<section class="background-containerImg " >
+		
+		<h1 class="h1" id="inicio">Variables y filter</h1>
+		
+		<article class="glass-effect padding">
+			<h1 class="h2" id="1"  >Variables</h1>
+			<p class="ColorBlanco marginText">
+			   La variable es un espacio que almacenamos en la memoria y en css se puede utilizar de la siguiente forma<br>
+			   vamos a crear el contenedor de variables universales para utilizarlas en todas nuestras variables en este caso son 2 colores rojo y azul claros.<br><br>
+			   :root { <br>
+			    --rojo:#f44;       <br>
+			   --azul:#66f;        <br>
+			}
+
+
+			</p>
+
+
+			<h1 class="h3">Variables con :root</h1>
+			 <p class="ColorBlanco marginText"> Esta propiedad nos permite traer variables globales y utilizarlas en nuestras clases</p>
+				
+			 		background: var(--rojo) 
+					<div class=" containers container-1"> </div> 
+					background: var(--azul)
+					<div class=" containers container-2">  </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>				
+			<h1 class="h2" id="2">Filter</h1>	
+
+			<h1 class="h3" >Filter none</h1>	
+				<p class="ColorBlanco">Imagen con filter none (propiedad por defecto)</p>
+				<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+				<br><br>
+			<h1 class="h3" >Filter blur</h1>	
+				<p class="ColorBlanco">Imagen con filter blur(10px) "los pixeles que queramos"</p>
+					<div class="FilterBlur"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<br><br><br>
+				<p class="ColorBlanco">Imagen con filter:brightness(0) los brillos van de:<br>
+									  0 = nada de brillo <br>
+									  0.5 = la mitad de brillo <br>
+									  1 = brillo por defecto <br>
+									  2 = El doble de brillo <br>
+									  10 = Brillo 10 veces fuerte <br>
+				"</p>
+				<h1 class="h3" id="3" >Filter: brightness</h1>	
+				<p class="ColorBlanco marginText"> filter:brightness(0) </p>
+					<div class="brightness0"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<p class="ColorBlanco   marginText"> filter:brightness(0.5) </p>
+					<div class="brightness0-5"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<p class="ColorBlanco  marginText"> filter:brightness(1) </p>
+					<div class="brightness1"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<p class="ColorBlanco  marginText"> filter:brightness(2) </p>
+					<div class="brightness2"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<p class="ColorBlanco  marginText"> filter:brightness(10) </p>
+					<div class="brightness10"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------->
+				<h1 class="h3" id="4" >Filter: contrast</h1>	
+				<p class="ColorBlanco marginText">Imagen con filter:contrast(0) los contrastes van de:<br>
+									  0 = nada de contraste <br>
+									  0.5 = la mitad de contraste <br>
+									  1 = contraste por defecto <br>
+									  2 = El doble de contraste <br>
+									  10 = contraste 10 veces fuerte <br>
+				"</p>
+
+				<p class="ColorBlanco marginText"> filter:contrast(0) </p>
+					<div class="contrast0"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<p class="ColorBlanco   marginText"> filter:contrast(0.5) </p>
+					<div class="contrast0-5"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<p class="ColorBlanco  marginText"> filter:contrast(1) </p>
+					<div class="contrast1"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<p class="ColorBlanco  marginText"> filter:contrast(2) </p>
+					<div class="contrast2"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+				<p class="ColorBlanco  marginText"> filter:contrast(10) </p>
+					<div class="contrast10"> 
+						<img  src="https://c.wallhere.com/photos/88/97/lion_big_cat_face_smoke_colored-1050823.jpg!d">
+					 </div> 
+			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------->			
+				<h1 class="h3" id="5" >Filter: drop-shadow().</h1>
+				<p class="ColorBlanco marginText"> filter: drop-shadow(10px 10px 5px #000). <br>
+					con los valores dentro del parentesis podemos modificar la sombra dentro de la imagen.<br>
+				</p>
+
+					<div class="drop-shadow"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div> 
+
+				<h1 class="h3" id="5" >Filter: box-shadow().</h1>
+					<div class="box-shadow"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div> 
+				<h1 class="h3" id="6" >Filter: grayscale().</h1>
+				<div class="gray-scale"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div> 
+
+				<h1 class="h3" id="7" >hue-rotate();</h1>
+				<p class="ColorBlanco marginText">Para cambiar los colores de un logo utilizamos hue-rotate.</p>
+				<p class="ColorBlanco  marginText"> hue-rotate(40deg); </p>
+					<div class="hue-rotate40deg"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div> 
+				<p class="ColorBlanco  marginText"> hue-rotate(100deg); </p>
+					<div class="hue-rotate100deg"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+
+				<h1 class="h3" id="8" >invert();</h1>
+				<p class="ColorBlanco marginText">Con invert invertimos los colores.</p>
+
+				<p class="ColorBlanco  marginText"> invert(0%); </p> 
+					<div class="invert0_porciento"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+
+				<p class="ColorBlanco  marginText"> invert(100%); </p> 
+					<div class="invert100_porciento"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+
+				<p class="ColorBlanco  marginText"> invert(100%); </p> 
+					<div class="invert50_porciento"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+
+				<h1 class="h3" id="9" >opacity();</h1>
+				<p class="ColorBlanco marginText">Es la opacidad de nuestra imagen.</p>
+
+				<p class="ColorBlanco  marginText"> opacity(0.5); </p> 
+					<div class="opacity0-5"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+				<p class="ColorBlanco  marginText"> opacity(1); </p> 
+					<div class="opacity1"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+
+
+				<h1 class="h3" id="10" >saturate();</h1>
+				<p class="ColorBlanco marginText">Es la saturacion de nuestra imagen.</p>
+				<p class="ColorBlanco  marginText"> saturate(100%); </p> 
+				<div class="saturate0_porciento"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+				<p class="ColorBlanco  marginText"> saturate(400%); </p> 
+					<div class="saturate400_porciento"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+				<p class="ColorBlanco  marginText"> sepia(1); </p> 
+					<div class="sepia1"> 
+						<img  src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Oikya_Front_Logo.png">
+					 </div>
+
+
+		</article>
+
+	</section>
+	<br>
+	<footer>
+		<div class="footer glass-effect">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+
+</body>
+</html>

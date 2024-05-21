@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
+	<link rel="stylesheet" type="text/css" href="css/styleAlineacionYcontroldeflujo.css">
+	<title>Alineacion y control de flujo</title>
+</head>
+<body  >
+	<div class="separador"></div>
+	<header>
+		<nav class="nav glass-effect">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"><a href="#inicio">inicio</a> </li> 
+				   <li class="nav__li"><a href="#1">justify-items</a> </li>
+				   <li class="nav__li"><a href="#2">align-items</a> </li>
+				   <li class="nav__li"><a href="#3">justify-content</a> </li>
+				   <li class="nav__li"><a href="#4">align-content</a> </li>
+				   <li class="nav__li"><a href="#5">conversion de content</a> </li>
+				   <li class="nav__li"><a href="#6">conversion items y content</a> </li>
+				   <li class="nav__li"><a href="#7">space en content</a> </li>
+				   <li class="nav__li"><a href="#8">Aplicado al grid-item</a> </li>
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul> 
+			   <ul class="nav__responsive-ul">                                                  
+					<div class="nav__responsive-buttom-container"></div>                                   
+					<div class="nav__li-container glass-effect">  
+						<li class="nav__responsive-li"> <a href="#inicio">inicio</a> </li>        								           
+						<li class="nav__responsive-li"> <a href="#1">justify-items</a> </li>
+						<li class="nav__responsive-li"> <a href="#2">align-items</a> </li>
+						<li class="nav__responsive-li"> <a href="#3">justify-content</a> </li>   
+						<li class="nav__responsive-li"> <a href="#4">align-content</a> </li>  
+						<li class="nav__responsive-li"> <a href="#5">conversion de content</a> </li>  
+						<li class="nav__responsive-li"> <a href="#6">conversion items y content</a> </li> 
+						<li class="nav__responsive-li"> <a href="#7">space en content</a> </li> 
+						<li class="nav__responsive-li"> <a href="#8">Aplicado al grid-item</a> </li>   
+						<li class="nav__responsive-li"> <a href="index.html">Volver a index</a></li>
+					</div>
+			   </ul>
+		</nav>
+	</header>
+
+	<section class="background-containerImg" >
+	
+
+			<h1 class="h1" id="inicio">Alineación y control de flujo</h1>
+		<article class="glass-effect padding marginText">
+			<br>
+
+
+				<p class="ColorBlanco">Tenemos dos tipos de alineación: <br></p> 
+				<p class="ColorBlanco marginText">
+
+					1:La alineacion en general de todos los items algo que se aplica al contenedor, la alinacion de filas y columnas que se aplica al contenedor.<br>
+					2:La alineacion particular por elemento individual.<br>
+					La alineacion es dentro de cada celda y no alineacion total del flex container.<br>
+					Cada celda seria un flex container.<br>
+					Propiedades del grid-container:<br>
+					justify-items (alinea horizontalmente)<br>
+					aligh-items (alinea verticalmente)<br>
+
+				</p>
+
+				<p class="ColorBlanco marginText">Vamos a alinear horizontalmente las grillas con justify-items.</p>
+									
+				<h1 class="h2" id="1">Justify-items</h1>
+				<h1 class="h3"> flex-start o start</h1>
+				<div class="Grid-container Justify-items-flex-start"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+				<h1 class="h3"> flex-center o center</h1>
+				<div class="Grid-container Justify-items-flex-center"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+				<h1 class="h3"> flex-end o end</h1>
+				<div class="Grid-container Justify-items-flex-end"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+		</article>
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+		<article class="glass-effect padding marginText">
+				<h1 class="h2" id="2">align-items</h1>
+				<h1 class="h3"> flex-start o start</h1>
+				<div class="Grid-container align-items-flex-start"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+				
+				<h1 class="h3"> flex-center o center</h1>
+				<div class="Grid-container align-items-flex-center"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+				
+				<h1 class="h3"> flex-end o end</h1>
+				<div class="Grid-container align-items-flex-end"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			
+			<h1 class="h3"> Combinamos justify-items: center<br> y align-items:center</h1>
+				<div class="Grid-container Justify-items-flex-center align-items-flex-center"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+		</article>
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+		<article class="glass-effect padding marginText">
+			<h1 class="h2" id="3"> justify-content </h1>
+			<p class="ColorBlanco marginText">	
+					justify-content (alinea horizontalmente todas las grillas)<br>
+				</p>
+			<h1 class="h3"> flex-start </h1>
+				<div class="Grid-container2 Justify-content-flex-start"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+
+			<h1 class="h3"> flex-center </h1>
+				<div class="Grid-container2 Justify-content-flex-center"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3"> flex-end </h1>
+				<div class="Grid-container2 Justify-content-flex-end"> 
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+		</article>
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+		<article class="glass-effect padding marginText">
+			<h1 class="h2" id="4"> align-content </h1>
+			<p class="ColorBlanco marginText">	
+					aligh-content (alinea verticalmente)<br>
+				</p>
+			<h1 class="h3"> flex-start </h1>
+				<div class="Grid-container2 align-content-flex-start heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3"> flex-center </h1>
+				<div class="Grid-container2 align-content-flex-center heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3"> flex-end </h1>
+				<div class="Grid-container2 align-content-flex-end heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+		</article>
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+		<article class="glass-effect padding marginText">
+				<h1 class="h2" id="5">Algunas convinaciones de justify content y align content</h1>
+
+				<h1 class="h3"> Convinaciones de justify content <br> y align content con center</h1>
+
+				<div class="Grid-container2 Justify-content-flex-center  align-content-flex-center heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+
+				<h1 class="h3"> Convinaciones de justify content <br> y align content con start</h1>
+				<div class="Grid-container2 Justify-content-flex-start  align-content-flex-start heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+
+				<h1 class="h3"> Convinaciones de justify content <br> y align content con end</h1>
+				<div class="Grid-container2 Justify-content-flex-end  align-content-flex-end heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+
+				<h1 class="h3"> Convinaciones de justify content center<br> y align content con end</h1>
+				<div class="Grid-container2 Justify-content-flex-center  align-content-flex-end heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+
+				<h1 class="h3"> Convinaciones de justify content end<br> y align content con start</h1>
+				<div class="Grid-container2 Justify-content-flex-end  align-content-flex-start heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+		</article>
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+		<article class="glass-effect padding marginText">
+			<h1 class="h2" id="6">Algunas convinaciones de justify items y align items con justify content y align content </h1>
+
+			<h1 class="h3"> Convinaciones de justify items, content <br> y align items, content con center</h1>
+				<div class="Grid-container3 Justify-items-flex-center align-items-flex-center Justify-content-flex-center align-content-flex-center heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+
+			<h1 class="h3"> Convinaciones de justify items, content  start <br> y align items, content con end</h1>
+				<div class="Grid-container3 Justify-items-flex-start align-items-flex-start Justify-content-flex-end align-content-flex-end heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3"> Convinaciones de justify items, content  end <br> y align items, content con start</h1>
+				<div class="Grid-container3 Justify-items-flex-end align-items-flex-end Justify-content-flex-start align-content-flex-start heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+		</article>
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+		<article class="glass-effect padding marginText">
+			<h1 class="h2" id="7"> space en content</h1>
+			<p class="ColorBlanco marginText">
+
+					justify-content y align-content tienen las mismas propiedades que flex:<br>
+					*space-around<br>
+					*space-between<br>
+					*space-evenly<br> 
+
+				</p>
+
+			<h1 class="h3">justify-content space-around </h1>
+				<div class="Grid-container3 Justify-content-space-around heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3">justify-content space-between </h1>
+				<div class="Grid-container3 Justify-content-space-between heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3">justify-content space-evenly </h1>
+				<div class="Grid-container3 Justify-content-space-evenly heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3">align-content space-around</h1>
+				<div class="Grid-container3 align-content-space-around heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3">align-content space-between</h1>
+				<div class="Grid-container3 align-content-space-between heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+			<h1 class="h3">align-content space-evenly</h1>
+				<div class="Grid-container3 align-content-space-evenly heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item">3</div>
+					<div class="Grid-item">4</div>
+					<div class="Grid-item">5</div>
+					<div class="Grid-item">6</div>
+					<div class="Grid-item">7</div>
+					<div class="Grid-item">8</div>
+					<div class="Grid-item">9</div>	
+				</div>
+				<br>
+		</article> 	
+<!---------------------------------------------------------------------------------------------------------------------------------------->			<article>
+			<h1 class="h2" id="8"> Aplicado al grid-item</h1>
+			<p class="ColorBlanco marginText">
+
+					Dentro de las propiedades aplicadas al grid-item encontramos.<br>
+					*align-self<br>
+					*justify-self.<br>
+
+				</p>
+
+			<h1 class="h3">align-self</h1>
+				<div class="Grid-container4 Justify-items-flex-center align-items-flex-center  heigh">  <!--Heigh para ver cambios en align-content-->
+					<div class="Grid-item Grid-item1">1</div>
+					<div class="Grid-item">2</div>
+					<div class="Grid-item Grid-item3">3</div>
+					<div class="Grid-item Grid-item4">4</div>
+					<div class="Grid-item Grid-item5">5</div>
+					<div class="Grid-item Grid-item6">6</div>
+					<div class="Grid-item Grid-item7">7</div>
+					<div class="Grid-item ">8</div>
+					<div class="Grid-item Grid-item9">9</div>	
+				</div>
+				<br>
+		</article>				
+
+	</section>
+
+	<footer>
+		<div class="footer glass-effect">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+</body>
+</html>

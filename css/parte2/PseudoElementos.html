@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, html, menus, metadatos, listas">
+	<meta name="description" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/stylePseudoElementos.css">
+	
+	<title>Pseudo Elementos</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">volver</a>
+		</nav>
+	</header>
+
+	<section>
+
+		
+		<article>
+
+			<div >
+				<h1>Pseudo Elementos</h1>
+				<p>Los pseudoelementos no hacen parte del dom (a exepcion de first-line y first-letter)pero si podemos hacer un cambio visual parecido al outline</p>
+				<p>PseudoElementos:
+				<br> ::First-line   | BLOCK
+				<br> ::first-letter | BLOCK
+				<br> ::Placeholder
+				<br> ::selection
+				<br> ::before | HIJOS CONTENT(NECESARIO) - INLINE	
+				<br> ::after  | HIJOS CONTENT(NECESARIO) - INLINE
+				</p>
+			</div>
+				<br><br>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+				<h2> Primer PseudoElemento  ::first-line   | BLOCK</h2>
+				<br><p> Selecciona la primera linea de un texto (no importa si se hace responsive siempre va a ser la primera linea)
+				para modificarla a conveniencia.  <b>no funciona inline de css</b></p>
+				<br>
+			<div class='PseudoElemento1'>
+				 esto esta escrito en letra cursiva Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+				<br>
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+				<h2>Segundo PseudoElemento ::first-letter   | BLOCK</h2><br>
+				<p> Selecciona la primera palabra de un texto (no importa si se hace responsive siempre va a ser la primera linea)
+				para modificarla a conveniencia.<b>(no funciona inline de css)</b>
+				</p>
+				<br>
+			<div class='PseudoElemento2'>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			
+			
+				<br>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+				<h2>Tercer PseudoElemento ::placeholder   </h2><br>
+				<p> este pseudoelemento esta en el atributo placeholder por lo general es usado en inputs <b>(No hace parte del dom)</b>
+				</b>
+				</p>
+
+			<form>
+				<input type="PseudoElemento3" placeholder="inserte su nombre aqui"><!--Con el placeholder generamos texto que no es real-->
+			</form>	
+				<br>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+				<h2>Cuarto PseudoElemento ::selection </h2><br>
+				<p class="PseudoElemento4"> este pseudoelemento selection es utilizado al momento de seleccionar un texto lo podamos modificar<b>(No hace parte del dom)</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor 
+				sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></b>
+				</p>
+				<br>
+				<img src="img/selection.PNG">
+				<br>
+<!----------------------------------------------------------------------------------------------------------------------------------------->
+				<h2>Quinto PseudoElemento ::BEFORE  | HIJOS CONTENT(NECESARIO) - INLINE</h2><br>
+				<p>
+					El pseudoElemento before permite colocar texto en css y poderlo ver antes de la etiqueta ademas este texto funciona como un inline (actua como si no existiera)			
+				</p>
+
+				<h2>Sexto PseudoElemento :: AFTER | HIJOS CONTENT(NECESARIO) - INLINE</h2><br>
+				<p>
+					El pseudoElemento after permite colocar texto en css y poderlo ver despues de la etiqueta ademas este texto funciona como un inline (actua como si no existiera)
+				</p>
+				<br>
+				<p>ahora vamos a ver un ejemplo de estos pseudoelementos.</p><br>
+				<p class="beforeYafter"> Texto real </p>
+				
+				<br>
+				<br>
+				<br>
+				<br>
+
+
+				
+		</article>
+	</section>
+
+</body>
+</html>

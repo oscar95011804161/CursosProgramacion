@@ -1,0 +1,5 @@
+C:\Users\oscar\Desktop\c\enlazar\curso_c_sharp.exe
+C:\Users\oscar\Desktop\c\enlazar\curso_c_sharp.dll
+C:\Users\oscar\Desktop\c\enlazar\curso_c_sharp.deps.json
+C:\Users\oscar\Desktop\c\enlazar\curso_c_sharp.runtimeconfig.json
+C:\Users\oscar\Desktop\c\enlazar\curso_c_sharp.pdb

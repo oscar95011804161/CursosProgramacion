@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
+	<link rel="stylesheet" type="text/css" href="css/styleAnimaciones.css">
+	<title>Animaciones</title>
+</head>
+<body>
+
+
+	<div class="separador"></div>
+	<header>
+		<nav class="nav glass-effect">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"><a href="#inicio">inicio</a></li>  
+				   <li class="nav__li"><a href="#1">animation-direction</a></li> 
+				   <li class="nav__li"><a href="#2">animation full-mode</a></li>
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul> 
+			   <ul class="nav__responsive-ul">                                                  
+					<div class="nav__responsive-buttom-container"></div>                                   
+					<div class="nav__li-container glass-effect">  
+						<li class="nav__responsive-li"> <a href="#inicio">inicio</a></li>     
+						<li class="nav__responsive-li"><a href="#1">animation-direction</a></li> 
+						<li class="nav__responsive-li"><a href="#2">animation full-mode</a></li> 
+						<li class="nav__responsive-li"> <a href="index.html">Volver a index</a></li>
+					</div>
+			   </ul>
+		</nav>
+	</header>
+
+	<section class="background-containerImg " >
+		
+		<h1 class="h1" id="inicio">Animaciones</h1>
+		<article class="glass-effect padding">
+
+			<p class="ColorBlanco marginText">
+				Son parecidas a las trancisiones pero requieren de una propiedad llamada @KeyFrames
+			</p>
+
+			<div class="container">
+				<div class="caja ">caja 1</div>  
+			</div>		
+			<br>
+			<p class="ColorBlanco marginText">
+				Otra animacion donde al 0% tienen posicion relativa color negro y a la izquierda.<br>
+				Al 50% se cambia el color verde. <br>
+				Al 100% se mueve hasta el 80% de la caja y se cambia el color a verde. <br>
+				Ademas de hacer que se repita las veces que queramos en este caso ponemos infinite con animation-iteration-count: infinite; <br>
+			 </p>
+			<div class="container">
+				<div class="caja2 ">caja 2</div>  
+			</div>	
+			<p class="ColorBlanco marginText"> animation duration 1s</p>
+			<div class="container">
+				<div class="caja2 animation-duration">caja 2</div>  
+			</div>	
+
+
+			
+			<h1 class="h2" id="1">animation-direction</h1>
+
+				<p class="ColorBlanco marginText">
+
+				Tenemos animation-direction: normal reverse y alternate  <br><br>
+
+				El primero que es normal quiere decir que va de 0% a 100%  <br>
+				<div class="container">  <div class="caja2 normal ">caja 2</div> </div>	<br>
+
+				El segundo que es reversa quiere decir que va de 100% a 0% <br>
+				<div class="container">  <div class="caja2 reverse">caja 2</div> </div>	<br>
+
+				El tercero que es alternate quiere decir que va de 0% a 100% y luego va de 100% a 0% <br>
+				<div class="container">  <div class="caja2 alternate">caja 2</div> </div>	<br>
+
+				El cuarto que es alternate-reverse quiere decir que va de 100% a 0% y luego va de 0% a 100% <br>
+				<div class="container">  <div class="caja2 alternate-reverse">caja 2</div> </div>	<br>
+
+				</p>
+			<h1 class="h2" id="2" >animation-fill-mode</h1>
+
+				<p class="ColorBlanco marginText"> Se utiliza para saber la posicion final de nuestra caja</p>
+
+				<p class="ColorBlanco marginText">   Se queda en la pocision original.</p>
+				<div class="container">  <div class="caja2 animation-iteration-count normal none">caja 2</div> </div>
+				
+				<p class="ColorBlanco marginText">   Se queda en la pocision final.</p>
+				<div class="container">  <div class="caja2 animation-iteration-count normal forwards">caja 2</div> </div>
+
+				<p class="ColorBlanco marginText">   Se queda en la pocision de ambos con both.</p>
+				<div class="container">  <div class="caja2 animation-iteration-count alternate both">caja 2</div> </div>
+			
+		</article>
+
+	</section>
+	<br>
+	<footer>
+		<div class="footer glass-effect">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+
+</body>
+</html>

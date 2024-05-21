@@ -1,0 +1,26 @@
+
+*{font-family: 'arial', cursive; font-size: 20px; text-align: justify;}
+h1{text-align: center;color: brown; font-size: 60px;}
+.h1{text-align:justify; color: orange; font-size:50px;}
+h2{text-align: justify; font-size: 40px; color: green;}
+article{margin: 40px 60px;}
+
+.caja1{
+	margin: 45px;
+	width: 200px;
+	height: 300px;
+	border: 5px solid red;
+	background: pink;
+	cursor: pointer;
+}
+
+
+.caja2{margin: 45px;width: 200px;height: 300px;border: 5px solid red;background: pink;
+}
+.caja2:active { /*La pseudo-clase active junto con cursor row-resize hace que el cursor cambie cuando lo primimos*/
+	cursor: row-resize;
+}
+.caja3{margin: 45px;width: 200px;height: 300px;border: 5px solid red;background: pink; cursor: progress;
+}
+.caja4{margin: 45px;width: 200px;height: 300px;border: 5px solid red;background: pink; cursor: copy;
+}

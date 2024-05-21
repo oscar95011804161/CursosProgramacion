@@ -1,0 +1,47 @@
+*{
+	font-family: 'arial', cursive;
+    font-weight: 100;
+    
+}
+
+h1{
+	text-align: center;
+}
+
+
+.article{
+	margin-right: 30px;
+}
+
+.article__p{
+	
+	padding: 10px 30px;
+}
+/*Este div esta con display block por defecto*/
+.div1{
+	width: 180px;
+	height: 180px;
+	margin: 20px;
+	border: 10px solid red;
+	background: yellow;
+}
+
+/*Este div esta con display in line */
+.div2{
+	width: 180px;
+	height: 180px;
+	margin: 20px;
+	border: 10px solid red;
+	background: yellow;
+	display: inline;
+}
+
+/*Este div esta con display inline block */
+.div3{
+	width: 180px;
+	height: 180px;
+	margin: 20px;
+	border: 10px solid red;
+	background: yellow;
+	display: inline-block;
+}

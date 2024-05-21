@@ -1,0 +1,43 @@
+
+
+body{
+	background: #EC4E12;/*Le damos un fondo diferente a la pagina*/
+}
+
+.form-img { /*Formulario de imagen*/
+    flex:1;
+    display: flex;
+    min-width: 300px; 
+    max-width: 100%;
+} 
+
+.img-container{
+    margin: auto;  
+}
+
+ul{
+	margin: 10px;
+}
+
+
+
+
+
+
+.nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+
+
+
+@media only screen and (max-width:600px){
+
+    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+    /*Lo que le queramos cambiar*/
+	.form-img { min-width:200px;  max-width:100%;}/*Formulario de imagen */ 
+}
+
+@media only screen and (max-width:300px){
+    
+    .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+    /*Lo que le queramos cambiar*/
+    .form-img { min-width: 100px;  max-width: 100%;}/*Formulario de imagen */ 
+}

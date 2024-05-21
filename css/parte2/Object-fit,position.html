@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, html, menus, metadatos, listas">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styleObject-fit,position.css">
+	<title>Object-fit </title>
+</head>
+
+<header>
+
+	<nav>
+		<a href="index.html">Volver a index</a>
+	</nav>
+</header>
+<body>
+	<section>
+		
+
+		<h1>Object-fit y Object-position</h1>	
+
+<!---Article1 ---------------------------------------------------------------------------------------------------------------------------------------->
+	<article>
+
+		<h1 class="h1"> Object-fit</h1>  
+		<p>Es utilizado para mejorar los objetos que en este caso es una imagen ya que cuando se usa height: %.</p>
+		<div class="caja">
+			
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+	<!------------------------------------------------------------------------------------------------------------------>
+		
+		<h2>Contain:</h2>
+		<p>Contein hace que las resoluciones de la imagen se ajuesten al contenido .</p>
+
+		<div class="caja1">
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+	<!------------------------------------------------------------------------------------------------------------------>	
+		<h2>Cover</h2>
+		<p>Cover la imagen se ajusta al contenedor y recorta los demas bordes.</p>
+		<div class="caja2">	
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+
+		<h2>None</h2>
+
+		<p>None hace que object-fit use las propiedades por defecto es decir utiliza la resolucion original.</p>
+		<div class="caja3">	
+			<img src="img/fredy.jpeg">
+		</div><br><br>
+
+		<h2>Scale-Down</h2>
+
+		<p>Scale-Down elije la opcion con mas baja resolu cion si contain tene mas baja resolucion lo elige o si es por ejemplo none lo elije.</p>
+		<div class="caja4">	
+			<img src="img/fredy.jpeg">
+		</div><br><br>
+
+	</article>
+<!---Article2----------------------------------------------------------------------------------------------------------------------------------------->
+	<article>
+		<h1 class="h1"> Object-position</h1>
+
+		<p>Con object-position cambiamos la pocision del objeto dentro de su respectiva caja.</p><br>
+
+
+		<!--Left-->
+		<h2>Oject-position left</h2>
+		<p>Utilizando la propiedad left movemos la imagen de izquierda a derecha.</p>
+		<div class="caja5">
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+
+		<!--Right-->
+		<h2>Oject-position right</h2>
+		<p>Utilizando la propiedad right movemos la imagen de derecha a izquierda.</p>
+		<div class="caja6">
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+
+		<!--top-->
+		<h2>Oject-position top</h2>
+		<p>Utilizando la propiedad top movemos la imagen de hacia arriba.</p>
+		<div class="caja7">
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+
+		<!--bottom-->
+		<h2>Oject-position bottom</h2>
+		<p>Utilizando la propiedad bottom movemos la imagen hacia abajo.</p>
+		<div class="caja8">
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+
+		<!--em-->
+		<h2>Oject-position em</h2>
+		<p>Utilizando em movemos la imagen hacia la derecha o izquierda dependiendo si es positivo o negativo el valor del em.</p><br>
+		<p>Por ejemplo aqui ponemos 2 em.</p>
+
+		<div class="caja9">
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+
+		<p>Aqui ponemos -3 em. </p>
+
+		<div class="caja10">
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+
+
+		<p>Aqui ponemos -2 em a la izquierda y 5em de arriba hacia abajo (si al revez solo cambiamos el valor de 5 em a negativo). </p>
+
+		<div class="caja11">
+			<img src="img/fredy.jpeg">
+		</div> <br><br>
+
+
+	</article>
+
+
+	</section>
+
+
+	
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8xnYMuuHw2Im5griZsuRpdifIBOBkoS6K3kboTMVBTCSb6v1fCHwANsviP36QRpSdmbjb1pTR+8EgpVWUNh84Q==",
+  "success": true,
+  "projectFilePath": "C:\\xampp\\cursos\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\login.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\oscar\\.nuget\\packages\\microsoft.netcore.app.host.linux-arm\\8.0.0\\microsoft.netcore.app.host.linux-arm.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

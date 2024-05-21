@@ -1,0 +1,158 @@
+*{
+	color: black;
+	
+	font-weight: 100;
+	font-size: 20px;
+}
+
+h1{
+	text-align: center;
+    color: blue;
+}
+
+h2{
+	
+    color: blue;
+    font-size: 35px; 
+}
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+
+/*Tema 1: Outline{*/
+	.div{    /*Con esta clase creamos los cuadros con outline*/
+		width: 150px;
+		height: 150px;
+		display: inline-block; /*Para que nos aparezcan todas las cajas unidas*/
+		background: orange;
+	}
+
+	#caja2{   /*Aqui podemos poner cualquier id de caja*/ 
+		margin: auto; /*Para centrar cajas*/
+		outline: 5px solid blue; /*outline no mueve ni la caja de abajo ni la de arriba asi que no 
+								 ocupa espacio, El outline es para enmarcar elementos*/		
+		position: relative; /*Se usa para ver el outline es un truco*/
+
+	}
+
+/*}
+	
+/*-------------------------------------------------------------------
+/*Tema 2: Position{*/
+	.div2{    /*Con esta clase creamos los cuadros */
+		width: 120px;
+		height: 120px;
+		display: block; /*para separar las cajas*/
+		background: red;
+	}
+	/*Vamos a dejarla por defecto en position:static; */
+	#caja-1{
+		background-color: green;
+	}
+	/*Vamos a probar position: relative;*/
+	#caja-2{
+		background-color: grey;
+		position: relative; /*la caja se puede mover pero conserva su espacio
+		 original es decir no puede su pocision original no puede ser ocupado*/
+		/*podemos moverlo de posicion con:*/
+		top:40px;
+		left:90px;  
+
+	}
+	/*Para ver el efecto relative de la caja 2*/
+	#caja-2punto1{
+		background-color: yellow;
+	}
+/*}
+/*-----------------------------------------------------------------------------------*/
+
+/* --------------------------------------------------------------------------------------------------------------------------*/
+
+/*Tema 3: z-index: {*/
+	
+  /* se usa para posicionar una caja mas arriba o mas abajo*/
+	#caja-3{
+		background-color: lightblue;
+		position: relative; 
+		top:40px; /*con esto modificamos la distancia de nuestra caja*/
+		left:90px;
+	}
+	#caja-3punto1{
+
+		background-color: pink;
+		position: relative; 
+		/*si queremos que quede por encima tenemos que colocar el valor de z index mas elevado*/
+		z-index: 10; /*colocamos un valor elevado para que este de primeras puede ser cualquiera */
+	}
+	#caja-3punto2{
+		color: white;
+		background-color: black;
+		position: relative; 
+		z-index: 9; /*Colocamos un valor inferior a la caja 3.1 para que se vea esta caja por debajo*/
+		top:-60px;  /*con esto modificamos la distancia de nuestra caja*/
+		left:90px;	
+	}
+	#caja-3punto3{
+		background-color: green;
+		position: relative; 
+		z-index: 8; /*Colocamos un valor por debajo de la caja 3.2 para que se vea por debajo*/
+		top:-120px;
+		left:1px;
+
+	}
+	/* z-index padre y z index hijo*/
+	.padre{
+		color: black;
+		width: 300px;
+		height: 300px;
+		position: relative;
+		background-color: orange;
+		margin:40px;
+
+	}
+	.hijo{
+		color: white;
+		width: 120px;
+		height: 120px;
+		background-color: blue;
+		position: relative;
+		top: 40px; /*Con esto subimos la caja azul*/
+		left:120px;
+
+	}
+
+	/*Cambiar de pocision el padre con el hijo*/
+
+	/*Se deben cumplir dos requisitos*/
+
+	/*Requisito 1: No colocar z index en la caja de padre */
+	.padre2{
+		
+		width: 300px;
+		height: 300px;
+		background: orange;
+		margin:40px;
+		position: relative;
+
+	}
+
+	/*Requisito 2: Colocar z-index=-1*/
+
+	.hijo2{
+
+		color: white;
+		background: blue;
+		width: 120px;
+		height: 120px;
+		position: relative;
+		top: -60px; /*Con esto subimos la caja azul*/
+		left: 110px;  /*Mandamos la caja azul a la izquierda*/
+		z-index: -1
+
+	}
+/*}
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+		

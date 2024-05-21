@@ -1,0 +1,72 @@
+
+
+/*Css tiene 7 selectores para modificar la pagina: 
+			
+Selector 1, universal:
+con este selector se edita todo el texto en general
+*/
+*{  
+	color: red;
+}
+/*			
+
+Selector 2, tipo:
+Con este selector modificamos solo un elemento por ejemplo la etiqueta h1 o puede ser cualquier etiqueta.
+*/
+h1{
+	color:blue;
+}
+
+/*Selector 3, clases:
+Con este selector modificamos cualquier etiqueta por ejemplo la etiqueta h5 seria:   <h5 clase="TituloClase>"
+*/	
+.TituloClase{
+	color: green;
+}
+/*Selectores por ID:
+Con este selector modificamos cualquier etiqueta por su id por ejemplo la etiqueta <h3> seria: <h3 id="element">
+(Nota no debemos darle mas de un id al mismo elemento ya que para programar da error en javascript por ejemplo
+<h3 id="element2">
+)
+
+
+*/
+#element{
+	color: purple;
+}
+
+#element2{
+	color: lightblue;
+}
+
+/*Selectores por Atributos
+
+Con este selector modificamos una etiqueta como por ejemplo <h3> por atributo usando seria: <h3 atributo= "color"
+
+Para crear un atributo lo encerramos en llaves [] para identificarlo y no necesariamente debemos usar la 
+palabra atributo para identificarlo puede ser cualquiera  y en "color" tambien se le puede cambiar al nombre que queramos
+*/
+[Atributo="color"]{
+	color:lightgreen;
+}
+
+/*Selectores por decendente
+
+Para seleccionar por decendiente ponemos la etiqueta mayor y luego la menor <h3><p></p></h3> seria: 
+
+<h3><p> Lorem ipsum dolor s adipisicing elit </p></h3>
+
+Y se escribe en css primero la etiqueta mayor y luego la menor asi:
+*/
+h3 p{
+	color:brown;
+}
+
+/*Selectores por pseudoclase(Active, hover)
+La pseudo clase hover sirve para que al momento de pasar el mouse por el texto cambie de color o tamaño etc.
+
+*/
+
+b:hover{
+	color:yellow;
+}

@@ -1,0 +1,53 @@
+*{
+    scroll-behavior: smooth; /*Esta propiedad se le da al contenedor para al momento de scrolear lo haga mas lento (utilizado para content)*/
+}
+
+body{
+    background-color: #3284b3;  
+}
+section{
+   margin: 0;
+}
+
+.container{
+   padding: 20px;
+   background: #59f;
+   font-size: 20px;
+   
+}
+
+/*Direcciones de nuestro texto*/
+.direccionRight{ direction: ltr; }/*Esta es la direccion derecha*/
+.direccionLeft{ direction: rtl; }/*Esta es la direccion derecha*/
+
+/*espacio entre letras*/
+.letter-spacing{ letter-spacing: 20px;}
+
+/*content*/
+
+#content{
+    background: red;
+}
+
+/*user-selected-none*/
+.user-select-none{
+    user-select: none;
+}
+
+
+
+
+
+    .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   @media only screen and (max-width:600px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+          
+       /*Lo que le queramos cambiar*/
+      
+   }
+   @media only screen and (max-width:380px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+   }

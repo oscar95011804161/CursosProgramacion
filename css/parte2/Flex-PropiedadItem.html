@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" lang="es">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Oscar Vanegas">
+	<meta name="keywords" content="inicio, curso, css">
+	<meta name="descriptio" content="esta es una pagina web para aprender css basico sin lenguajes adicionales">
+	<meta name="Copyright" content="Ladrillos y bloques paraiso S.A.S.">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleFlex-PropiedadItem.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!--<script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>--> <!--Con esto traemos el icono-->
+
+	<title>Flex propiedades de los items</title>
+</head>
+<body>
+	<div class="separador"></div>
+	<header>
+		<nav class="nav">
+			   <ul class="nav__ul">   																					
+				   <li class="nav__li"> <a href="#inicio">Inicio</a> </li> 
+				   <li class="nav__li"><a href="#1tema">Margin dentro del flex</a> </li>
+				   <li class="nav__li"><a href="#2tema">Grupo flex shordhand</a> </li>
+				   <li class="nav__li"> <a href="#3tema">Order</a> </li>
+				   <li class="nav__li"><a href="index.html">Volver a index</a></li>
+			   </ul>
+		</nav>
+	</header>
+
+	<section>
+		<h1 class="h1" id="inicio">PROPIEDADES DE LOS ITEMS EN FLEXBOX</h1>
+
+		
+			<p>Ahora vamos a trabajar de modo en que le demos la propiedad al item y no al contenedor como veniamos haciendolo.</p><br>
+
+			<h1 class="h2" id="1tema">Margin dentro del flex.</h1>
+			<p>Aqui vemos como se comporta las cajas margin dentro del flex.</p>
+			<p>Los flex containers son las cajas azules.</p>
+
+			<h1 class="h3">Comportamientos</h1>
+
+			<div class="flex-container">
+				<div class="flex-item margin-left orange"> Margin left</div>
+			</div>
+			<br>
+			<div class="flex-container">
+				<div class="flex-item margin-right orange"> Margin right</div>	
+			</div>
+			<br>
+			<div class="flex-container">
+				<div class="flex-item margin-bottom orange"> Margin bottom</div>	
+			</div>
+			<br>
+			<div class="flex-container">
+				<div class="flex-item margin-top orange"> Margin top</div>	
+			</div>
+			<br>
+			<div class="flex-container">
+				<div class="flex-item margin-top-left orange"> Margin top-left</div>	
+			</div>
+			<br>
+			<p>Como vemos top y bottom entran en un conflicto y deciden la derecha como predeterminado y el centro ya que no sabe si decidir arriba o bajo.</p>
+			<div class="flex-container">
+				<div class="flex-item margin-top-bottom orange"> Margin top-bottom</div>	
+			</div>
+			<br>
+			<div class="flex-container">
+				<div class="flex-item margin-top-bottom-left orange"> Margin top-bottom-left</div>	
+			</div>
+			<br>
+			<div class="flex-container">
+				<div class="flex-item margin-top-bottom-left-right orange"> Margin top-bottom-left-right</div>	
+			</div>
+			<br>
+			<p>Hace lo mismo que la anterior.</p>
+			<div class="flex-container">
+				<div class="flex-item margin-auto orange"> Margin auto</div>	
+			</div>
+			<br>
+
+			<div class="GrupoFlex">
+				
+				<h1 class="h2" id="2tema">GRUPO FLEX SHORTHAND</h1>
+				<h1 class="h3">Flex</h1>
+
+				<p>La propiedad flex agrupa a grow, shrink y basis como la propiedad flex.</p>
+				<p>.flex{ flex: 1 3 500px;} </p>
+				<div class="flex-container2">
+					<div class="flex-item2 flex orange">flex </div>
+					<div class="flex-item2 ">flex </div>
+					<div class="flex-item2 green">flex </div>
+				</div>
+				<p>Cuando estan todos en su maximo tamaño el flex tiene su tamaño de 500px<br>
+				el unico en ocupar todo el espacio disponible con el grow es el flex y ocupara todo el espacio disponible mayor a los 500px de ser porsible<br>
+				Cuando halla poco espacio el flex se reduce mas que los demas para darle a los otros su espacio con shrink.</p>
+
+				<h1 class="h3">Flex-grow</h1>
+
+				<p>Flex grow agarra el espacio sobrante y lo reparte en las cajas que quedan de esta forma.</p>
+				<p>Las podemos ensanchar todo lo que queramos pero lo minimo va a ser 120 px ya que lo establecimos en min-width.</p>
+
+				<div class="flex-container2">
+					<div class="flex-item flex-grow orange">flex grow 1</div>
+					<div class="flex-item flex-grow">flex grow 1</div>
+					<div class="flex-item flex-grow green">flex grow 1</div>
+				</div>
+				<br>
+				<p>Pero si queremos darle todo el espacio disponible a una sola caja por ejemplo a la verde le ponemos el flex-grow solo a la verde.</p>
+				<br>
+				<div class="flex-container2">
+					<div class="flex-item orange">sin flex grow </div>
+					<div class="flex-item">sin flex grow</div>
+					<div class="flex-item flex-grow green">flex grow 1</div>
+				</div>
+				<br>
+				<p>Se queremos darle el grow a dos cajas lo podemos hacer en este caso se lo daremos a la naranja y a la verde.</p>
+				<div class="flex-container2">
+					<div class="flex-item flex-grow orange">flex grow 1</div>
+					<div class="flex-item">sin flex grow</div>
+					<div class="flex-item flex-grow green">flex grow 1</div>
+				</div>
+				<br>
+				<p>Si queremos darle a un grow un tamaño mas grande que el otro cambiamos los valores del grow.</p>
+				<br>
+				<div class="flex-container2">
+					<div class="flex-item flex-grow orange">flex grow 1</div>
+					<div class="flex-item flex-grow3">flex grow 3</div>
+					<div class="flex-item flex-grow green">flex grow 1</div>
+				</div>
+				<br>
+				<h1 class="h3">Flex-basis</h1>
+				<p>es lo mismo que el width la diferencia es que si se encuentra ubicada arriba o abajo indirectamente siempre le va a dar mas prioridad al flex-basis.</p>
+				<br>
+				<div class="flex-container2">
+					<div class="flex-item  orange">flex </div>
+					<div class="flex-item flex-basis">flex basis</div>
+					<div class="flex-item green">flex </div>
+				</div>
+
+				<h1 class="h3">Flex-shrink</h1>
+				<p>Esta instruccion lo que hace es darle 300px primero a los elementos que no tengan el shrink es decir entre mas pequeña sea la pantalla en este caso la caja que tenga el flex-shrink tendra menos espacio que las demas.</p>
+				<p>Primero le colocamos un width de 300px a cada caja.</p>
+
+				<br>
+				<div class="flex-container2">
+					<div class="flex-item width300px flex-shrink orange">flex-shrink</div>
+					<div class="flex-item width300px ">flex </div>
+					<div class="flex-item width300px green">flex </div>
+				</div>
+
+				<p>Para que la de flex-shirink no seda nada le damos el valor de 0.</p>
+				<br>
+				<div class="flex-container2">
+					<div class="flex-item width300px flex-shrink2 orange">flex </div>
+					<div class="flex-item width300px ">flex </div>
+					<div class="flex-item width300px green">flex </div>
+				</div>
+			</div>
+
+			<div class="order">
+		
+				<h1 class="h2" id="3tema">ORDER</h1>
+				<h1 class="h3">Descripción</h1>
+
+				<p>Es un item del flexbox es parecido al z-index, pero en el eje en el que punta el main axis.<br>
+				Ordenamos de modo en que el azul sea el primer elemento, el naranja sea el tercer elemento y el verde sea el segundo elemento, utilizando flex-column.</p>
+
+				<div class="flex-container-column">
+					<div class="flex-item3 orange2">flex order 3</div>
+					<div class="flex-item3 blue2">flex order 1</div>
+					<div class="flex-item3 green2">flex order 2</div>
+				</div>
+				<br>
+				<p>Ahora vamos a utilizar el column-reverse </p>
+				<br>
+				<div class="flex-container-column-reverse">
+					<div class="flex-item3 orange2">flex order 3</div>
+					<div class="flex-item3 blue2">flex order 1</div>
+					<div class="flex-item3 green2">flex order 2</div>
+				</div>
+				<br>
+				<p>De hecho le podemos poner a order  30 60 los valores que queramos, ira los mayores de ultimo lugar y los menores de primer lugar</p> 
+			</div>
+			
+				
+
+		
+	</section>
+
+	<footer>
+		<div class="footer">
+			<h3>Pagina creada por oscar vanegas todos los derechos reservados 2023</h3>
+		</div>   																								
+	</footer>
+
+</body>
+</html>

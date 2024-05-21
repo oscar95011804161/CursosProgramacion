@@ -1,0 +1,91 @@
+body{
+    background: radial-gradient(circle, #1a83d8,#0407a7);
+   
+   }
+   section{
+      margin: 0;
+   }
+
+   .img{
+    height: 200px;
+    width: 400px;
+   }
+
+   .Grid-container{     
+    display: grid;   
+    margin: 10px;
+    border: 5px #000 solid;
+    background-color: #444;
+    grid-gap: 10px;
+    z-index: 10; 
+     /*Con grid-template-areas modificamos el anchor toda nuestra pagina de la siguiente manera*/
+    grid-template-areas:
+     "header header header"
+     "aside main main" 
+     "aside main main" 
+     "aside main main" 
+     "aside main main" 
+     "footer footer footer" ;
+
+     grid-template-rows: repeat(auto-fill , 1fr);
+     /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+     height: 100vh;/*modificamos la altura*/
+    }
+/*Modificamos el grid-area*/
+    ul li {                             /*modificamos el li dentro del ul*/
+        display: inline-block;          /*Para acomodar los links*/
+    }
+
+    .Grid-item{ /*con esto modificamos todas las grillas*/
+        padding: 20px;
+    }
+
+   /* Creamos una clase para cada parte de la pagina*/
+
+
+
+    .grid-header{
+        background-color: #f96;
+        grid-area: header;  /*Esta propiedad va de la mano con grid-templetes-area y es para saber cual es el header*/
+    }
+	.grid-main{
+        background-color: #96f;
+        grid-area: main;  /*Esta propiedad va de la mano con grid-templetes-area y es para saber cual es el main*/
+    }
+	.grid-aside{
+        background-color: #999;
+        grid-area: aside;  /*Esta propiedad va de la mano con grid-templetes-area y es para saber cual es el aside*/
+    }
+	.grid-footer{
+        background-color: #6f9;
+        grid-area: footer;  /*Esta propiedad va de la mano con grid-templetes-area y es para saber cual es el footer*/
+    }
+   
+   
+   
+   .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   
+   @media only screen and (max-width:600px){
+   
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       
+       .img{
+        height: 100px;
+        width: 200px;
+       }
+       /*Lo que le queramos cambiar*/
+       
+   }
+   
+   @media only screen and (max-width:380px){
+       
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+       .img{
+        height: 50px;
+        width: 100px;
+       }
+       
+   }

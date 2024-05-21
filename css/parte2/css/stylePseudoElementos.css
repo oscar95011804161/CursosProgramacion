@@ -1,0 +1,83 @@
+*{
+	font-family: 'arial', cursive;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: border;
+}
+
+
+
+/*Para usar un pseudo elemento correctamente debemos primero declarar el elemenento que es la clase pseudoelemento1 */
+
+/*Luego creamos el pseudo elemento   .clase::Pseudoelemento{}  todo pegado  */
+.PseudoElemento1::first-line{
+    color: blue;
+}
+
+/*con este pseudoelemento modificamos la primera letra*/
+.PseudoElemento2::first-letter{
+    color: red;
+    font-size: 80px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*Creacion del formulario para el placeholder*/
+form{
+    margin: 100px auto;
+    display: block;
+    background: #555;
+    padding: 100px;
+    width: 50%;
+}
+/*La caja para meter informacion */
+input{    
+    width: 100%;
+    padding: 6px;
+}
+/*Con el pseudo elemento placeholder podemos modificar la caja que no hace parte del dom y agregarle diseño y escribir en ella  */
+input::placeholder{
+    color: red;
+    background: yellow;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*Pseudo elemento selection
+Selection es utilizado al momento de seleccionar un texto lo podamos modificar */
+
+.PseudoElemento4::selection{
+    color: green;
+    background: black;
+}
+img{
+    margin: 0px 40px;
+    height: 200px;
+    width: 800px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*Pseudo elemento before*/
+
+
+.beforeYafter::before{
+    content: "Texto before (podemos escribir antes 'no es real')";
+    color: grey;
+    background: yellow;
+}
+
+.beforeYafter::after{
+    content: "Texto after (podemos escribir despues'no es real')";
+    color: green;
+    background: blue;
+
+}
+
+
+

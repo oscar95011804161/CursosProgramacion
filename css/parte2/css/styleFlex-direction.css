@@ -1,0 +1,153 @@
+/*estilos----------------------------------------------------------------------------*/
+*{font-family: 'arial', cursive; font-size: 20px; text-align: justify;}
+h1{text-align: center;color: brown; font-size: 60px;}
+.h1{text-align:center; color: orange; font-size:50px;}
+h2{text-align: justify; font-size: 40px; color: green;}
+img{width: 400px;height: 300px;}
+/*nav en movimiento-------------------------------------------------*/
+.separador{padding-top: -100px;}
+body{padding-top: 30px;
+} 
+/*nav-----------------------------------------------------------------------------------*/
+.nav{padding-top: 120px; width: 100%;  background: darkslateblue; position:fixed; margin: -150px; margin-left: 0px;}
+.nav__li {display: inline-block; padding: 12px;} 
+.nav__li a{color: #fff; text-decoration: none;} 
+.nav__li:hover > a{color: #bbb;}
+
+/*Section y article---------------------------------------------------------------------*/
+section{margin: 40px 60px;}
+/*Vamos a trabajar con flex container*/
+.flex-container1{
+	display: flex;
+	flex-direction: row;
+} 
+
+.flex-container2{
+	display: flex;
+	flex-direction: column;
+} 
+
+.flex-container3{
+	display: flex;
+	flex-direction: row-reverse;
+} 
+
+.flex-container4{
+	display: flex;
+	flex-direction: column-reverse;
+} 
+/*Mantenemos resolucion y hacemos que los objetos se bajen en caso de disminuir la resolucion*/
+.flex-container5{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-container6{
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+.flex-container7{
+	display: flex;
+	flex-wrap: nowrap;/*Ponemos no wrap para poder utilizar justify-content*/
+	justify-content: center;
+}
+
+.flex-container8{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.flex-container9{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.flex-container10{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	
+}
+
+.flex-container11{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;  /*funciona junto a height y es para el cross axis*/
+	height: 50vh; /*da ina anchura de 50vh solo funciona con aligh-items*/
+}
+
+.flex-container12{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: end;  /*funciona junto a height y es para el cross axis*/
+	height: 50vh; /*da ina anchura de 50vh solo funciona con aligh-items*/
+}
+
+.flex-container13{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: baseline;  /*funciona junto a height y es para el cross axis*/
+	height: 50vh; /*da ina anchura de 50vh solo funciona con aligh-items*/
+}
+
+.flex-container14{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;  /*funciona junto a height y es para el cross axis*/
+	height: 50vh; /*da ina anchura de 50vh solo funciona con aligh-items*/
+}
+
+.flex-container15{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: flex-start;  /*funciona junto height y es para el cross axis*/
+	height: 50vh; /*da ina anchura de 50vh solo funciona con aligh-items*/
+}
+/*Flex-content-------------------------------*/
+.flex-container16{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: flex-start;  /*funciona junto height y es para el cross axis*/
+	height: 50vh; /*da ina anchura de 50vh solo funciona con aligh-items*/
+}
+
+.flex-container17{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: flex-end;  /*funciona junto height y es para el cross axis*/
+	height: 50vh; /*da ina anchura de 50vh solo funciona con aligh-items*/
+}
+
+.flex-container18{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-evenly;
+	align-content: baseline;  /*funciona junto height y es para el cross axis*/
+	height: 50vh; /*da ina anchura de 50vh solo funciona con aligh-items*/
+}
+.flex-item{ 
+	background: #248;
+	color: #fff;
+	padding: 10px;
+	margin: 10px;
+	width: 120px;
+	height: 120px;
+}
+
+	.flex-item-sinHeight{ background: #248;color: #fff;padding: 10px;margin: 10px; width: 120px;}
+	.orange{background: orange;}
+	.green{background: green;}
+
+
+
+/*Footer-------------------------------------------------------*/
+.footer{padding: 20px 20px; color: #fff; background:darkslateblue; text-align: center; width: 100%;}

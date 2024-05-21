@@ -1,0 +1,82 @@
+*{
+	color: black;
+	font-family: 'lobuster',cursive;
+	font-weight: 100;
+	font-size: 40px;
+}
+
+h1{
+	text-align: center;
+    color: blue;
+}
+
+h2{
+	
+    color: blue;
+    font-size: 35px; 
+}
+
+
+
+/*Tema1: Position absolute{                                          */
+	
+	/**/
+		div{
+			display: block;
+			background-color: yellow;
+			position: absolute;
+		}
+
+		div div{
+			height: 100px;
+			width: 100px;
+			
+		}
+		.contenedor{    /*Con esta clase creamos los cuadros */
+				position: relative;
+				border:4px solid red;
+				width: 450px;
+				height: 450px;
+				margin-left: 100px;
+				margin-top: 50px;
+				background-color: yellow;
+				
+		}
+/*Para mover las cajas es simple */
+		.caja1{                     /*La caja 1 la dejamos en el lugar inicial*/
+			background-color: green;
+		}
+		.caja2{
+			background-color: brown; 
+			right: 0;              /*La caja 2 la movemos hacia la parte derecha asi*/
+		}
+		.caja3{
+			background-color: lightblue;/*queremos que la caja 3 este abajo hacia la derecha */
+			right: 0;             /*La caja 3 la movemos hacia la derecha */
+			bottom: 0;		     /*Luego la movemos hacia abajo*/
+		}
+		.caja4{						/*La caja 4 la queremos abajo a la izquierda */
+			background-color: purple;  
+			bottom: 0;		        /*Como por defecto todas las cajas estan a la izquierda entonces solo bajamos la caja*/
+		}
+		/*Vamos a poner una caja en el medio*/
+		/*Para ponerla colocamos abajo, arriba, izquierda y derecha en 0 ademas de eso debemos poner el margin en auto */
+		.caja5{						
+			background-color: white;  
+			bottom: 0;		        
+			right: 0;
+			left: 0;
+			top: 0;
+			margin: auto;
+
+
+		}
+
+/*}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*Tema2: Position fixed{                                  */
+/*Un ejemplo de ello es la publicidad en las paginas web, con fixed podemos bajar la pagina web pero no se ve la publicidad*/
+/*} */
+

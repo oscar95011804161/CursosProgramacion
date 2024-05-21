@@ -1,0 +1,63 @@
+/*estilos----------------------------------------------------------------------------*/
+*{font-family: 'arial', cursive; font-size: 20px; text-align: justify;}
+h1{text-align: center;color: brown; font-size: 60px;}
+.h1{text-align:justify; color: orange; font-size:50px;}
+h2{text-align: justify; font-size: 40px; color: green;}
+p{text-align: justify; font-size: 20px;}
+
+
+/*nav en movimiento-------------------------------------------------*/
+.separador{padding-top: -100px;}/*Con esto subimos el separador*/
+body{padding-top: 30px;
+
+} /*Con esto bajamos el body*/
+/*nav-----------------------------------------------------------------------------------*/
+.nav{
+	padding-top: 120px; /*Bajamos el nav*/
+	width: 100%;   /*Anchura muy grande para rellenar*/
+	background: darkslateblue;
+	position:fixed; 
+	margin: -150px; /*con el margin subimos el nav*/
+	margin-left: 0px;
+}
+.nav__li {display: inline-block; padding: 12px;} /*ponemos links en misma fila y separacion*/
+.nav__li a{color: #fff; text-decoration: none;} /*color blanco texto y sin decoracion*/
+.nav__li:hover > a{color: #bbb;}/*cuando pase por texto cambia de color*/
+
+/*Section y article---------------------------------------------------------------------*/
+
+section{margin: 40px 60px;}
+
+/*Para usar correctamente flexbox debemos crear un contenedor donde almacenemos el atributo display:flex 
+luego dentro de este crear una caja donde modificamos el texto a nuestro gusto */
+.flex-container{
+	display: flex;
+	flex-direction: column;
+} 
+
+.flex-item{ 
+
+	margin: 10px;
+	width: 600px;
+	height: 400px;
+	border: 10px solid grey;	
+}
+
+.flex-item-2{ 
+
+	margin: 10px;
+	width: 600px;
+	height: 200px;
+	border: 10px solid grey;	
+}
+
+/*Footer-------------------------------------------------------*/
+
+.footer{
+	  padding: 20px 20px;
+	  color: #fff;
+      background:darkslateblue;
+      text-align: center;
+      width: 100%;     
+     
+}

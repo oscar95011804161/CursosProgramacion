@@ -1,0 +1,118 @@
+*{
+	font-family: 'arial', cursive;
+    font-size: 20px;
+    text-align: justify;
+}
+
+h1{
+	text-align: center;
+	color: brown;
+	font-size: 60px;
+}
+h2{
+	text-align: justify;
+	font-size: 40px;
+	color: green;
+}
+
+article{
+	margin: 40px 60px;
+	
+}
+/*Pseudo-clase :Hover---------------------------------------------------------------------------------------------------------------------------------------*/
+.cajas{text-align: center; width:160px; height:160px;}
+
+#caja1{background: red;}#caja2{padding: 20px; background: darkslateblue; color: #fff;}
+
+
+
+#caja1:hover{background: blue;}#caja2:hover{padding: 20px; background: slateblue; color: #000;}
+
+
+
+/*Pseudo-clase :Link ----------------------------------------------------------------------------------------------------------------------------------------*/
+/*Con esta pseudo clase link */
+
+
+/*Aqui no aplicamos pseudo clases pero*/
+a{
+	color: brown;
+ 	text-align: center;
+	width: 300px;
+	height: 300px;
+}
+/*la psudo clase link se usa cuando la direccion de un link no es valida*/
+ .link1:link{
+ 	color: grey;
+ 	background: 
+ 	text-align: center;
+	width: 300px;
+	height: 300px;
+
+}
+
+
+/*Pseudo-clase Visited-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Cuando el link es visitado le podemos cambiar al color que queramos y aplicarle las propiedades que queramos*/
+
+.link2{
+	color: blue;
+}
+
+.link3:visited{
+	color: violet;
+	font-size: 50px;
+}
+/*Pseudo-clase Active---------------------------------------------------------------------------------------------------------------------------------*/
+
+/*creamos una caja*/
+.caja2{
+	width: 250px;
+	height: 250px;
+	background: red;
+	margin: 25px;
+}
+
+/*con la pseudo clase active cambiamos el color al momento de oprimir la caja y al desoprimirla vuelve a su estado original*/
+.caja2:active{
+	background: blue;
+}
+
+/*Pseudo-clase focus -----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Primero creamos una caja donde la dejamos de color gris y le damos una trancision de 1s al momento de oprimirla*/
+.caja3{
+	margin: 25px;
+	background: grey;
+	transition: background 1s, padding 2s;
+	
+}
+/*con la pseudo-clase focus cambiamos el color del input a blanco al momento de oprimirlo*/
+.caja3:focus{
+	background: white;
+	padding: 20px;/*Aqui engrandamos la caja*/
+}
+
+/*Pseudo-clase lang-------------------------------------------------------------------------------------------------------------------------------------*/
+/*Vamos a crear una caja*/
+.caja4{
+	margin: 25px;
+}	
+
+/*con la caja anterior a la etiqueta <b> que esta dentro de ella le vamos a aplicar la pseudo-clase lang y dentro de parentesis colocamos las iniciales del idioma()*/
+
+/*En este caso ingles*/
+.caja4 b:lang(en) {
+	background: yellow;
+	padding: 20px;
+}
+
+/*En este caso español*/
+.caja4 b:lang(es) {
+	background: red;
+	padding: 20px;
+}
+
+

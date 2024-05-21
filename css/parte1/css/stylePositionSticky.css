@@ -1,0 +1,25 @@
+*{
+	
+	font-family: 'lobuster',cursive;
+	font-weight: 100;
+	font-size: 40px;  /*Este es el tamaño de la letra*/
+}
+
+
+
+
+.caja-fixed{
+	background-color: blue;
+	position:sticky; /*Posicion fixed*/
+	opacity: .3 ; /*Le damos un reflejo a la caja*/
+	top: 0;
+	margin-top: 100px;
+}
+
+.caja-fixed2{
+	background-color: red;
+	position:sticky; /*Posicion fixed*/
+	opacity: .3 ; /*Le damos un reflejo a la caja*/
+	top: 0;
+	margin-top: 100px;
+}

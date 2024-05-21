@@ -1,0 +1,5 @@
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\login.exe
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\login.dll
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\login.deps.json
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\login.runtimeconfig.json
+C:\xampp\cursos\C_sharp\forms\WinFormsApp\WinFormsApp\login.pdb

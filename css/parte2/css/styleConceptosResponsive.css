@@ -1,0 +1,27 @@
+*{font-family: 'arial', cursive; font-size: 20px; text-align: justify;}
+h1{text-align: center;color: brown; font-size: 60px;}
+.h1{text-align:justify; color: orange; font-size:50px;}
+h2{text-align: justify; font-size: 20px; color: green;}
+article{margin: 40px 60px;}
+
+
+div{
+	width: 45%;
+	display: inline-block;
+	padding: 20px;
+	background: #ddd;
+}
+.caja2{background: #bbb;
+}
+
+/*Para trabajar con responsive design utilizamos los siguientes atributos*/
+
+@media only screen and (max-width: 800px){
+
+	div {display:block;width:100%;
+	}
+
+	h2{
+	font-size: 20px;
+	}
+}

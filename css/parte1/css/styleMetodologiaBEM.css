@@ -1,0 +1,16 @@
+/*Metodologia BEM
+
+La metodologia es bem es usada para que al momento de editar un formulario no halla necesidad de crear pseudo clases
+
+*/
+
+/*Con  .form1__input editamos todos los imputs del formulario 1 */
+
+.form1__input{
+	color: blue;
+}
+
+/*Con  .form1__input--active editamos solo un imput del formulario 1 */
+.form1__input--active{
+	color: red;
+}

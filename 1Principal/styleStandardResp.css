@@ -1,0 +1,151 @@
+
+@media only screen and (max-width:600px) {
+
+    /*estilos----------------------------------------------------------------------------*/
+    *{font-family: 'arial', cursive; font-size: 10px; text-align: justify;}
+    .h1{text-align:center; color: brown; font-size:35px;}
+    .h2{text-align: justify; color: orange; font-size: 25px;}
+    .h3{text-align: justify; color: green; font-size: 15px; }
+    p{text-align: justify; font-size: 10px;}
+
+    .ColorBlanco{ color: #fff;}
+    .ColorNegro{ color: #050404;}
+
+    .fondoVerde{background: #378a53;}
+    .fondoNegro{background: #131614;}
+    .fondoBlanco{background: #fff;}
+
+
+
+
+
+    .nav__responsive{
+        padding-top: 120px; /*Bajamos el nav*/ 
+        width: 100%;   /*Anchura muy grande para rellenar*/ 
+       background:#378a53; 
+        position:fixed;  
+        margin: -150px; /*con el margin subimos el nav*/ 
+        margin-left: 0px;
+        z-index: 10;     
+    }
+    .nav__ul{display: none;}/*Para desaparecer el nav normal sin responsive*/
+    
+       
+    .nav{
+        height: 37px;
+        width: 100%;
+    }	
+    .nav__responsive-ul{
+        display: block;      /*Para que nos muestre el nav responsive */
+        position: absolute;  /*hace que nuestro nav responsive tenga su espacio en el dom (mirar tematica de position absolute)*/
+        width: 100%;
+        height: 37px;   
+        margin-top: 37px;
+        padding-top: 27px;
+    }
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 64px); /**/
+        transition: all 1s;
+        z-index: 1;
+        width: 50%; /*Este es el tamaño del contenedor*/
+        padding-top: -20px;
+        background:#242222f8;
+        
+    }
+    .nav__responsive-li{ /*Modificamos todas las clases de li ubicadas dentro del nav__responsive*/
+        width: 100%;  
+        padding: 9px 20px;  /*separamos todos los li */
+    }
+    .nav__responsive-li a{ /*Modificamos los a ubicados dentro de .nav__responsive-li*/
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    .nav__responsive-li a:hover{
+        background-color: transparent;
+        color: white;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{ /*con esto movemos el responsive ul para poner el container*/
+        top: -27px;
+    }   
+}
+
+@media only screen and (max-width:400px) {
+
+    /*estilos----------------------------------------------------------------------------*/
+    *{font-family: 'arial', cursive; font-size: 10px; text-align: justify;}
+    .h1{text-align:center; color: brown; font-size:25px;}
+    .h2{text-align: justify; color: orange; font-size: 20px;}
+    .h3{text-align: justify; color: green; font-size: 15px; }
+    p{text-align: justify; font-size: 10px;}
+
+
+    .ColorBlanco{ color: #fff;}
+    .ColorNegro{ color: #050404;}
+
+    .fondoVerde{background: #378a53;}
+    .fondoNegro{background: #131614;}
+    .fondoBlanco{background: #fff;}
+
+
+
+    .nav__responsive{
+        padding-top: 120px; /*Bajamos el nav*/ 
+        width: 100%;   /*Anchura muy grande para rellenar*/ 
+       background:#378a53; 
+        position:fixed;  
+        margin: -150px; /*con el margin subimos el nav*/ 
+        margin-left: 0px;
+        z-index: 10;     
+    }
+    .nav__ul{display: none;}/*Para desaparecer el nav normal sin responsive*/
+    
+       
+    .nav{
+        height: 37px;
+        width: 100%;
+    }	
+    .nav__responsive-ul{
+        display: block;      /*Para que nos muestre el nav responsive */
+        position: absolute;  /*hace que nuestro nav responsive tenga su espacio en el dom (mirar tematica de position absolute)*/
+        width: 100%;
+        height: 37px;   
+        margin-top: 37px;
+        padding-top: 27px;
+    }
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 64px); /**/
+        transition: all 1s;
+        z-index: 1;
+        width: 50%; /*Este es el tamaño del contenedor*/
+        padding-top: -20px;
+        background:#1a1919;
+        
+    }
+    .nav__responsive-li{ /*Modificamos todas las clases de li ubicadas dentro del nav__responsive*/
+        width: 100%;  
+        padding: 9px 20px;  /*separamos todos los li */
+    }
+    .nav__responsive-li a{ /*Modificamos los a ubicados dentro de .nav__responsive-li*/
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .nav__responsive-li a:hover{
+        background-color: transparent;
+        color: white;
+    }
+    .nav__responsive-ul:hover > .nav__li-container{ /*con esto movemos el responsive ul para poner el container*/
+        top: -27px;
+    }   
+}
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shorthand</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styleshorthand_ejeZ.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Volver a index</a>
+		</nav>
+		<h1>SHORTHAND</h1>
+	</header>
+	<section>
+			
+		<article>
+				<p>Es una propiedad acortada es decir es una propiedad rocortada por que es el conjunto de otras propiedades.
+				Dentro de las propiedades recortadas podemos encontrar al:</p>
+				<!-------------------------------------------------------------------------------------->
+				<h1>OUTLINE:</h1> 
+				<p> Parecido al border pero a diferencia del border este no ocupa ninguna pocision en la caja encambio el border ocupa pixeles reduciendo el tamaño de la caja seleccionada.<br>
+				El outline nos sirve para saber la pocision de una caja pero debido a que otras cajas pueden tapar la caja muchas veces no se ve el borde de la caja debido al eje z  por lo que hay un truco para que se vea y es usando position ="relative" en css.</p>
+				<br>
+		    	<!--Aqui colocamos los div unidos para que las cajas queden en fila de forma horizontal-->	
+		</article>
+
+		<article>
+				<!--Creamos una clase llamada all para guardar la informacion de la cada y el id para seleccionarla-->
+
+			    <div class="div" id="caja1">caja 1</div><div class="div" id="caja2">caja 2</div><div class="div" id="caja3">caja 3</div><div class="div" id="caja4">caja 4</div>
+			   
+			   <h1>POSITION</h1>
+
+			    <p>Cuando activamos la propiedad position nos permite mover el objeto con top,right,left, bottom</p>
+			    <br>
+			    <p>Cundo usamos position nos brinda nuevas posibilidades, dentro de las posibilidades de position tenemos.<br><br>
+			    	STATIC:  Es el valor por defecto es decir que no esta pocisionado.<br>
+			    	RELATIVE: Cuando posicionamos un elemento de manera relativa podemos moverlo por encima de otro objeto<br>
+			    	ABSOLUTE: La posicion absoluta es diferente a la relativa porque esta no reserva un espacio en el dom es decir cuando lo movemos otro elemento puede llegar a ocupar su lugar reservado que tenia.<br>
+			    	FIXED: es igual que absolute la diferencia es que este si queda fijado<br>
+			    	STICKY<br>
+			    	<br><br>
+		</article>
+		    
+		<article>
+				<h2>Position Relative</h2>
+
+			    <p>El Z index es la forma de poner un objeto encima de otro quien tenga un valor mas alto estara mas adelante de nuestra vista</p><br>
+			    
+			    <center>
+			    	<p>Caja 1 en pocision static</p>
+			    	 <div class="div2" id="caja-1">caja 1 </div>
+			    	<p>Caja 2 en pocision relative</p>
+			    	 <div class="div2" id="caja-2">caja 2 </div>
+			    	 <div class="div2" id="caja-2punto1">caja 2.1</div>
+			    	 <p>pocision z-index</p>
+			    	 <p>Vamos a poner la caja 3.1 por encima de las otras y la 3.2 encima de la 3.3</p>
+			    	 <div class="div2" id="caja-3">caja 3</div>
+			    	 <div class="div2" id="caja-3punto1">caja 3.1</div>
+			    	 <div class="div2" id="caja-3punto2">caja 3.2</div>
+			    	 <div class="div2" id="caja-3punto3">caja 3.3</div>
+			    </center>
+
+			    <br>
+			    <p>Ahora vamos a crear una caja(clase) padre y una caja (clase) llamada hijo.</p>
+			    <p>como vemos la caja hijo esta por encima de la caja padre </p>
+			    <br><br>
+			    <!---->
+			    <center>
+			    	<div class="padre">Caja padre
+			    		<div class="hijo">Caja hijo</div>
+			    	</div>	
+			    <br>
+
+			     </center>
+			     	<p>Si queremos que la clase padre se posicione por encima del hijo.</p>
+			    	<p>Se deben cumplir dos requisitos.<br><br>
+			    	Requisito 1: No colocar z index en la caja de padre </p><br>
+			    	<p>Requisito 2: Colocar z-index=-1</p>
+			    	<br><br>
+
+			     <center>
+			    	<div class="padre2"> caja padre
+			    		<div class="hijo2">caja hijo</div>
+			    	</div>
+			     </center>
+
+		</article>
+
+		    	 
+
+
+
+
+
+
+	</section>
+</body>
+</html>

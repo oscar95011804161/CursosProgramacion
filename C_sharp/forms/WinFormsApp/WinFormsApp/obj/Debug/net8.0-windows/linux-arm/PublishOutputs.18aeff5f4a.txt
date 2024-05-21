@@ -1,0 +1,5 @@
+C:\Users\oscar\Desktop\c\linux32bits\login
+C:\Users\oscar\Desktop\c\linux32bits\login.dll
+C:\Users\oscar\Desktop\c\linux32bits\login.deps.json
+C:\Users\oscar\Desktop\c\linux32bits\login.runtimeconfig.json
+C:\Users\oscar\Desktop\c\linux32bits\login.pdb

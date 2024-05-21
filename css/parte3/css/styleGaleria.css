@@ -1,0 +1,75 @@
+body{
+    background: radial-gradient(circle, #1a83d8,#0407a7);/*Le damos un fondo diferente a la pagina*/
+   }
+   section{
+      margin: 0;
+   }
+   
+   .Grid-container{     /*Con grid para el justiy items y align items*/
+       display: grid;   
+       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));      
+       grid-template-rows: repeat(3, 100px); 
+       border: 3px #000 solid;
+       background-color: #333;
+       grid-gap: 10px;
+       z-index: 10; 
+   
+       grid-auto-rows: 100px; /*Aqui modificamos el tamaño de todas las filas de grid implicito a 1fr*/
+   }
+
+   img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;   /*Con esta propiedad se adapta las imagenes*/
+   }
+   /*Con first child modificamos la imagen 1*/
+
+   img:first-child{
+    grid-column: 1/3;
+    grid-row: 1/3;
+   }
+
+   img:nth-child(6){
+        grid-column: 2/4;
+        grid-row: 3/5;
+   }
+
+   img:nth-child(10){
+        grid-row: span 3;
+   }
+
+
+
+   
+   
+
+
+   
+
+   /*vamos a modificar la primera grilla con color rojo y vamos a decir que ocupe de la linea 1 a la 3 en espacio que serian 
+   dos cajas*/
+   
+   
+   
+   
+   
+   
+   
+   
+   .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   
+   @media only screen and (max-width:600px){
+   
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       
+       /*Lo que le queramos cambiar*/
+       
+   }
+   
+   @media only screen and (max-width:300px){
+       
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+       
+   }

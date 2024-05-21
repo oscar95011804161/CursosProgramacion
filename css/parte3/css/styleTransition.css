@@ -1,0 +1,79 @@
+body{
+    background: radial-gradient(circle, #10997b,#305326);   
+}
+section{
+   margin: 0;
+}
+
+.container{
+    height: 300px;
+    background: #121116;
+    margin: 30px;
+    padding: 30px;
+}
+/*Vamos a trabajar con transition*/
+.caja{
+    background-color: #fbfdfd;
+    height: 100px;
+    width: 100px;
+    transition-property: background; /*Con esta propiedad le decimos que alla una trancision cuando se apliquen background es decir colores*/
+    transition-duration: 1s;  /*Aqui le decimos a la caja que va a ver una trancision de 1 segundo*/
+}
+
+.caja:hover{    background-color: aqua;}
+
+.delay{transition-delay: 2s;} /*Con la propiedad transition delay hacemos que el se tarde en mostrar el transition ejemplo aqui 2 segundos*/
+
+
+
+/*Transition 2-----------------------------------------------------------------------------------------------------------------------------*/
+
+.container2 {
+
+    padding: 20px 5px;
+    background: #121116;
+}
+
+.cajas{
+    background-color: #9ba6b8;  /*Es el valor de el fondo del container*/
+    height: 70px;
+    width: 70px;
+    transition-property: left background;  /*con la transision se mueve a la izquierda y cambia de color */
+    transition-duration: 3s, 3s;  /*el 3s es la duracion del movimiento(left y el 1s es la duracion del cambio de color background)*/  
+    margin: 20px;
+    border: 1px #fbfdfd solid;
+    position: relative;
+    left: 0;
+}
+
+.container2:hover>.cajas{left:80%; background-color: #10997b;}  /*el contenedor es la caja y las cajas son los elementos que cambian */
+/*Se mueven a la izquierda a un 80% y cambian de color durante la trancision*/
+
+
+.linear{ transition-timing-function: linear}
+.ease{ transition-timing-function: ease}
+.ease-in{ transition-timing-function: ease-in}
+.ease-out{ transition-timing-function: ease-out}
+.ease-in-out{ transition-timing-function: ease-in-out}
+
+
+
+
+
+
+
+
+
+    .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   @media only screen and (max-width:600px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+          
+       /*Lo que le queramos cambiar*/
+      
+   }
+   @media only screen and (max-width:380px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+   }

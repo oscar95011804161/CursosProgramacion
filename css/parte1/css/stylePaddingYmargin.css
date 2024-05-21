@@ -1,0 +1,110 @@
+
+/*El padding es la distancia que hay entre el borde de la caja y el texto*/
+
+*{
+	color: black;
+
+}
+
+h1{
+	color: red;
+	background-color: black;
+}
+/*El padding nos separa el texto de los bordes de la caja*/
+.paddingParrafo1{
+
+	background-color: green;
+	color: white;
+	display: inline-block;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.paddingParrafo2{
+
+	/*Si queremos que el padding sea todo de 2em solo ponemos 2 em*/
+
+
+	background-color: brown;
+	color: white;
+	display: inline-block;
+	/*padding: 2em;*/
+	padding: 2em 1em 4em 3em; /*top, right, bottom, left para no anotar muchos padding*/
+
+}
+.paddingParrafo3{
+
+	/**/
+
+
+	background-color: black;
+	color: white;
+	display: inline-block;
+	padding: 10px 50px; /*con 10px modificamos top y bottom y con 50px modificamos right y left*/
+	height: 100px;   /*Con height modificamos la altura de nuestro bloque*/
+	width: 300px;    /*Con width modificamos la anchura de nuestro bloque*/
+	box-sizing: content-box; /*Con este permitimos que el bloque no use toda la pagina*/
+	text-align: center; /*Es <center></center> en html es para poner al centro un texto o a algun otro lado */
+
+}
+
+/*El margin nos separa la caja del resto de las cajas*/
+.MarginParrafo1{
+
+	background-color: grey;
+	color: white;
+	display: inline-block;
+	padding: 100px; /*con 100px modificamos top, bottom, right y left*/
+	box-sizing: border-box; 
+	text-align: center; 
+	margin: 10px 70px; /*Con margin establecemos una margen que nos permite generar
+						 una sensacion de movimiento en nuestro bloque*/
+	border-radius: 100px; /* Le damos un radio a nuestro borde de modo que se vea como un circulo */
+}
+
+.MarginParrafo2{
+
+	background-color: purple;
+	color: white;
+	display: inline-block;
+	padding: 100px;
+	
+	box-sizing: border-box; 
+	text-align: right; /*Mandamos al lado derecho el texto*/
+	margin: 10px 40px; 
+	border-radius: 100px;
+	border: 4px solid blue; /*Con border establecemos el grosor del borde, solid es un borde solido,
+	                         blue es el color de nuestro borde*/
+}
+
+.rotacion{
+
+	background-color: yellow;
+	color: green;
+	display: inline-block;
+	padding: 100px;
+	
+	box-sizing: border-box; 
+	text-align: right; /*Mandamos al lado derecho el texto*/
+	margin: 10px 40px; 
+	border-radius: 100px;
+	border: 4px solid grey; /*Con border establecemos el grosor del borde, solid es un borde solido,
+	                         blue es el color de nuestro borde*/
+	box-shadow: 20px 10px 15px 10px blue; /*es la sombra que tendra la caja el 1ro es el eje x, 2do es el eje Y,
+								   3ro es el tamaño del desenfoque, 4to es el tamaño de la sombra, 5to es el color  */
+
+	text-shadow: 2px 2px 7px blue; /*Es lo mismo que porder shadow pero sin el de 4to que es el tamaño de la sombra*/
+	transform: rotate(-40deg); /*con la funcion transform mas la propiedad rotate podemos mover nuestra caja en grados
+								si ejemplo: queremos 40 grados hacia arriba es 40deg pero si queremos
+								hacia abajo es -40deg*/
+}
+
+
+#imagen1{
+	padding: 30px;
+	height:400px;
+	width: 500px;
+
+}

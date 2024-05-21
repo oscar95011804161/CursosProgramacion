@@ -1,0 +1,50 @@
+body{
+    background: radial-gradient(circle, #10997b,#305326);
+   
+}
+section{
+   margin: 0;
+}
+
+.div-responsive{
+    background-color: #df731b;
+}
+/*Trabajamos con media Query para dar condiciones al momento de cambiar resoluciones*/
+
+/*En este ejemplo decimos que para el texto se ponga con fondo rojo tiene que tener un minimo de 400px
+ y un maximo de 600px (se deben cumplir las dos condiciones) de lo contrario no se ejecuta el codigo*/
+    @media screen and (min-width: 400px) AND (max-width: 600px){ 
+
+        .div-responsive{   background-color: #00ff6a; }
+    }
+    /*si tiene minimo 50px y maximo 100px se aplica esta condicion*/
+    @media screen and (min-width: 100px) AND (max-width: 200px){ 
+
+        .div-responsive{   background-color: #0c0808; }
+    }
+    /*si tiene minimo 1000px y maximo 1600px se aplica esta condicion*/
+    @media screen and (min-width: 1000px) AND (max-width: 1600px){ 
+
+        .div-responsive{   background-color: #eb1717; }
+    }
+
+
+
+    .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   
+   @media only screen and (max-width:600px){
+   
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       
+       
+       /*Lo que le queramos cambiar*/
+      
+   }
+   
+   @media only screen and (max-width:380px){
+       
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+   }

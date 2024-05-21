@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: aqua;
+}
+
+.background-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /*Al final del url decimos no repeat y center que es la posicion*/
+    background:url(../img/fondo1.jpeg)
+    /*(https://images.pixexid.com/a-4k-ultra-hd-wallpaper-of-a-futuristic-cityscape-at-night-with-neon-lights-ill-u12ywmlh.jpeg)
+    /*(https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg)*/
+    
+    /*(https://media.sproutsocial.com/uploads/landscape-hero-bg-1.jpg)*/
+    no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.background-container2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /*Al final del url decimos no repeat y center que es la posicion*/
+    background:url(https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg)
+    no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.card-container{
+    width: 45rem;
+    height: 30rem;
+    border: 3px solid #fafafa10;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.glass-effect{
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+}
+

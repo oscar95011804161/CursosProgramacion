@@ -1,0 +1,48 @@
+*{
+	font-family: 'arial', cursive;
+    font-weight: 100;
+    font-size: 20px;
+    text-align: justify;
+}
+
+h1{
+	text-align: center;
+}
+.contenedor div{
+	float: left;
+	padding:20px ;
+}
+.primario{
+	background: red;
+	width: 50%;
+}
+
+.segundario{
+ 	background: yellow;
+ 	width: 50%;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*Uso principal del float-----------------------------------------------------------------------------------*/
+
+.cont{
+	margin: auto;
+	margin-top: 50px;
+	border: 4px solid red;
+	background: white;
+	width: 70%;/*Con esto modificamos el porcentaje de la pagina*/
+	padding: 20px;  /*Madificamos los bordes de los textos*/
+}
+.cont p{
+	
+	width: 50%;
+}
+.cont img{
+	width: 300px;
+	height: 300px;
+	float: left ; /*Con esto movemos la imagen*/
+	margin: 10px ;
+
+}
+

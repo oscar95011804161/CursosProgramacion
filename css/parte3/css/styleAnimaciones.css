@@ -1,0 +1,110 @@
+body{
+    background: radial-gradient(circle, #10997b,#305326);   
+}
+section{
+   margin: 0;
+}
+
+.container{
+    background: #121116;
+    padding: 30px 5px;
+}
+.caja{
+    background-color: #fbfdfd;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    animation-name: desplazarse;       /*Para trabajar con animaciones vamos a llamar a la animacion desplazarse*/
+    animation-duration: 3s;          /*Tiempo de la animacion*/
+}
+
+/*Vamos a trabajar con animaciones*/
+
+
+/*Utilizamos la siguiente herramienta*/
+@keyframes desplazarse{         /*Desplazarse es un nombre que le ponemos para luego llamarla a la caja puede ser cualquiera*/
+     from{
+        position: relative;
+        left: 0;
+    }
+
+     to{
+        left:80%
+    }
+}
+
+.caja2{
+    background-color: #fbfdfd;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    animation-name: desplazarse2;       /*llamamos a la otra propiedad */
+    animation-duration: 3s;   
+    position:relative;  
+    animation-iteration-count: infinite;     
+}
+@keyframes desplazarse2{         /*Desplazarse es un nombre que le ponemos para luego llamarla a la caja puede ser cualquiera*/
+    0%{
+       position: relative;
+       left: 0;
+       background-color: #025;
+   }
+    50%{
+        
+       background-color: red;
+   }
+   100%{
+    left: 80%;
+    background-color: green;
+    }
+}
+.animation-duration {animation-duration: 1s; }
+.animation-iteration-count {animation-iteration-count: 1; }
+ 
+/*Animation-direction*/
+   .normal{ animation-direction:normal ;}   /*animation direction normal*/
+   .reverse{ animation-direction:reverse ;}   /*animation direction en reversa*/
+   .alternate{ animation-direction:alternate ;}   /*animation direction al alternado primero normal y despues reversa*/
+   .alternate-reverse{ animation-direction:alternate-reverse ;}   /*animation direction alternado de reversa primero reversa y despues normal*/
+/*Animation-full-mode*/
+
+    .none{ animation-fill-mode: none;}        /*se queda en la pocision original*/
+    .forwards{ animation-fill-mode: forwards;} /*Se queda como definimos en la ultima instancia*/
+    .both{ animation-fill-mode: both;} /*Se queda como definimos en ambos*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   @media only screen and (max-width:600px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+          
+       /*Lo que le queramos cambiar*/
+      
+   }
+   @media only screen and (max-width:380px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+   }

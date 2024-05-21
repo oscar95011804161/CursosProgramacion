@@ -1,0 +1,5 @@
+C:\Users\oscar\Desktop\c\64bits\login.exe
+C:\Users\oscar\Desktop\c\64bits\login.dll
+C:\Users\oscar\Desktop\c\64bits\login.deps.json
+C:\Users\oscar\Desktop\c\64bits\login.runtimeconfig.json
+C:\Users\oscar\Desktop\c\64bits\login.pdb

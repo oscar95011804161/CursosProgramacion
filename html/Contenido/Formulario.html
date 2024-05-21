@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+
+	<h1>Formularios</h1>
+	<br>
+	<p>Los formularios o imputs nos permiten ingresar datos para ser leidos y almacenados en una base de datos o para volver a ser utilizados</p>
+	<a href="index.html">Volver a index</a>
+
+	<form>  <!--Para crear un formulario utilizamos la etiqueta form-->
+		<br>
+		<input type="" name=""> <!--con etiqueta imput ingresa datos, Con atributo Type es el tipo, name es el nombre de la barra-->
+        <!--ponemos varias inputs-->
+		<br><br>
+		<p>Nombre</p>
+		<input type="text" name=""> <!--Type text = es que el tipo de dato ingresado sea un dato tipo texto-->
+		<br><br>
+		<!--Required se usa para que llene el campo obligatoriamente-->
+		<p>Password</p>
+		<input type="password" required="" > <!--Type password = es que el tipo de dato ingresado sea protegido por contraseña ****** -->
+		<br><br>
+		<p>Dato numerico</p>
+		<input type="number" required=""> <!--Type number = es que el tipo de dato ingresado sea numeros y se pueda cambiar con flechas-->
+		<br><br>
+		<p>Email</p>
+		<input type="email" required="">  <!--Type email = es que el tipo de dato ingresado tenga algo @ algo .com sino sera rechazado -->
+		
+		<!--Algunos otros imputs-->
+
+
+
+		<br><br>
+		<p>Color</p>
+		<input type="color" required=""> <!--Este input nos deja seleccionar un color-->
+		<br><br>
+		<p>Rango</p>
+		<input type="range" min="1" max="5" required=""> <!--este input es una barra de rango donde se mueve deacuerdo a el valor minimo y maximo-->
+		<br><br>
+		<p>Fecha</p>
+		<input type="date" required=""> <!--este imput nos permite ingresar la fecha-->
+		<br><br>
+		<p>Hora</p>
+		<input type="time" required=""> <!--Este input nos permite colocar la hora-->
+		<br><br>
+		<p>Boton sin dialogo</p>
+		<input type="button" required=""><!--Este input es un boton que se oprime y nos arroja un valor-->
+		<br><br>
+		<p>Boton con dialogo</p>
+		<input type="button" value="Boton" required=""><!--El mismo input anterior pero le colocamos en value boton -->
+		<br><br>
+		<p>Es un boton para enviar los datos anteriores</p>
+		<input type="submit" name="">
+
+	</form><!--Para cerrar formulario-->
+
+	<h1>Formulario backend servidor</h1>
+	<form method="post"> <!--El metodo post es para enviar el formulario al servidor de backend para encriptacion y mas seguridad--> 
+		<input type="text" required="" value="esto significa el atributo value"> <!--Value nos muestra el valor del formulario el cual podemos modificar-->
+		 <br> <br>
+		<p>Textarea</p>
+		<textarea> </textarea><!--Es una etiqueta que nos permite generar una barra donde la podemos modificar-->
+		<textarea readonly="">Este texto solo se puede leer</textarea> <!-- atributo readonly es para solo leerlo sin modificarlo-->
+	</form>
+</body>
+</html>

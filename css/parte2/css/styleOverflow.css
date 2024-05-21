@@ -1,0 +1,79 @@
+*{
+	font-family: 'arial', cursive;
+    font-weight: 100;
+    font-size: 40px;
+    word-spacing: 5px;
+}
+
+.div1{
+	margin: 100px;
+	width: 300px;
+	height: 250px;
+	border: 4px solid red;
+	background: grey;
+	float: right;
+
+	/*overflow es un shorthand ya que tiene overflow-x,   overflow-y donde tiene propiedades de auto, iheret, hidden y scrooll*/
+	overflow: inherit; 
+}
+
+.div2{
+	margin: 100px;
+	width: 300px;
+	height: 250px;
+	border: 4px solid red;
+	background: grey;
+	
+
+	/*overflow es un shorthand ya que tiene overflow-x,   overflow-y donde tiene propiedades de auto, iheret, hidden y scroll*/
+	overflow: scroll; 	
+
+}
+
+.div3{
+	margin: 100px;
+	width: 300px;
+	height: 250px;
+	border: 4px solid red;
+	background: grey;
+
+	/*overflow es un shorthand ya que tiene overflow-x,   overflow-y donde tiene propiedades de auto, iheret, hidden y scrooll*/
+	overflow: auto; 	
+	
+}
+
+.div4{
+	margin: 100px;
+	width: 300px;
+	height: 250px;
+	border: 4px solid red;
+	background: grey;
+
+	/*overflow es un shorthand ya que tiene overflow-x,   overflow-y donde tiene propiedades de auto, iheret, hidden y scrooll*/
+	overflow: hidden; 
+	
+}
+
+.div5{
+	margin: 100px;
+	width: 300px;
+	height: 250px;
+	border: 4px solid red;
+	background: grey;
+
+	/*overflow es un shorthand ya que tiene overflow-x,   overflow-y donde tiene propiedades de auto, iheret, hidden y scrooll*/
+	overflow-x:hidden ; 
+	
+}
+.div6{
+	margin: 100px;
+	width: 300px;
+	height: 250px;
+	border: 4px solid red;
+	background: grey;
+
+	/*overflow es un shorthand ya que tiene overflow-x,   overflow-y donde tiene propiedades de auto, iheret, hidden y scrooll*/
+	overflow-y: hidden; 
+	
+}
+

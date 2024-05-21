@@ -1,0 +1,97 @@
+body{
+    background: radial-gradient(circle, #105799,#2e4c79);   
+}
+section{
+   margin: 0;
+}
+/*variables---------------------------------------------------------------------------------------------------------------------------------*/
+.containers{
+    padding: 30px;
+    height: 150px;
+    width: 150px;  
+    margin: 30px;   
+}
+
+/*La propiedad root nos permite almacenar variables globales para utilizarlas en nuestras clases posteriormente*/
+:root  { 
+    --rojo:#f44 ;     
+   --azul:#66f ;   
+}
+
+
+.container-1{ background: var(--rojo)}
+.container-2{ background: var(--azul);}
+
+/*Filter----------------------------------------------------------------------------------------------------------------------------------*/
+
+.FilterBlur{  filter: blur(10px);}
+
+/*brillo*/
+.brightness0{    filter: brightness(0);}
+.brightness0-5{  filter: brightness(0.5);}
+.brightness1{    filter: brightness(1);}
+.brightness2{    filter: brightness(2);}
+.brightness10{  filter: brightness(10);}
+
+/*contraste*/
+.contrast0{    filter: contrast(0);}
+.contrast0-5{  filter: contrast(0.5);}
+.contrast1{    filter: contrast(1);}
+.contrast2{    filter: contrast(2);}
+.contrast10{  filter: contrast(10);}
+
+
+.drop-shadow{ filter: drop-shadow(10px 10px 5px #000);}
+.box-shadow{ box-shadow:10px 10px 5px #302b2b; width: 60%;}
+.gray-scale{ filter: grayscale(0.5); width: 60%;}
+.hue-rotate40deg{ filter: hue-rotate(40deg); width: 60%;}
+.hue-rotate100deg{ filter: hue-rotate(100deg); width: 60%;}
+
+.invert0_porciento{ filter: invert(0%);}
+.invert100_porciento{ filter: invert(100%);}
+.opacity0-5{ filter: opacity(0.5); }
+.opacity1{ filter: opacity(1); }
+.saturate0_porciento{ filter: saturate(100%);}
+.saturate400_porciento{ filter: saturate(400%);}
+.sepia1{ filter: sepia(1); }
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+   
+   @media only screen and (max-width:600px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+          
+       /*Lo que le queramos cambiar*/
+      
+   }
+   @media only screen and (max-width:380px){
+       .nav__responsive-ul{ display: block;}      /*Para que nos muestre el nav responsive ES OBLIGATORIO*/
+       /*Lo que le queramos cambiar*/
+
+   }

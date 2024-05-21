@@ -1,0 +1,108 @@
+
+.flex-container{
+	display: flex;
+	height: 50vh; 
+	border: #248 solid;
+}
+.flex-container2{
+	display: flex;
+	height: 20vh; 
+	
+}
+.flex-item{ 
+	background: #248;
+	color: #fff;
+	padding: 10px;
+	margin: 10px;
+	min-width: 120px;
+	height: 100px;	
+}
+
+.orange{background: orange;}
+.green{background: green;}
+/*Margin------------------------------------------------------------------------------------------------------------*/
+	.margin-left{margin-left: auto;}
+	.margin-right{margin-right: auto;}
+	.margin-bottom{margin-bottom: auto;}
+	.margin-top{margin-top: auto;}
+	.margin-top-left{margin-left: auto; margin-top: auto;} /*Aqui unimos top y left*/
+	.margin-top-bottom{margin-top: auto; margin-bottom: auto;} /*Aqui unimos top y bottom*/
+	.margin-top-bottom-left{margin-top: auto; margin-bottom: auto; margin-left: auto;} /*Aqui unimos top, bottom y left */
+	.margin-top-bottom-left-right{margin-top: auto; margin-bottom: auto; margin-left: auto; margin-right: auto;} /*Aqui unimos top, bottom y left */
+	.margin-auto{margin: auto;}
+
+/*Grupo flex grow, basis, shrink*/
+.GrupoFlex{ border: #248 solid;}
+
+.flex-item2{ 
+	background: #248;
+	color: #fff;
+	padding: 10px;
+	margin: 10px;
+	min-width: 150px;
+	width: 300px;
+	height: 100px;	
+}
+/*Flex-grow---------------------------------------------------------------------------------------------------------*/
+	.flex-grow{flex-grow: 1;} /*agarra el espacio sobrante y lo reparte*/
+	.flex-grow3{flex-grow: 3;}
+ /*flex-basis*/
+	.flex-basis{flex-basis: 600px; width:100px ;}/*Como veremos flex-basis tendra prioridad sobre el width siempre no importa el orden de cascada*/
+/*flex shrink*/	
+	.width300px{width: 300px;}/*Primero le ponemos 300px de width a cada caja*/
+	.flex-shrink{flex-shrink: 3;}/*el objeto que tenga el shrink dispondra de menos espacio para que los demas alcancen los 300px  es decir entre mayor cantidad de shrink mayor sera el espacio que tendra que seder el objeto*/
+	.flex-shrink2{flex-shrink: 0;}/*Si queremos que no seda nada ponemos 0 si queremos que seda la mitad de las otras colocamos 0.5*/
+
+
+/*flex: ahora juntamos grow, basis y shrink con la propiedad flex*/	
+.flex{ flex: 1 3 500px;} 
+
+.orange{background: orange;}
+.green{background: green;}
+/*order ------------------------------------------------------------------*/
+/*Es un item del flexbox es parecido al z index, pero en el eje en el que punta el main axis*/
+
+.flex-container-column{
+	display: flex;
+	height: 100vh; 
+	flex-direction: column;
+	border: rgb(38, 196, 17) solid;	
+}
+
+.flex-item3{ 
+	background: #248;
+	color: #fff;
+	padding: 10px;
+	min-width: 150px;
+	text-align: center;
+	height: 100px;
+	width: 300px;
+	flex: 1;
+		
+}
+
+/*Utilizamos el column reverse*/
+
+.flex-container-column-reverse{
+	display: flex;
+	height: 100vh; 
+	flex-direction: column-reverse;
+	border: rgb(38, 196, 17) solid;	
+}
+/*Ordenamos de modo en que el azul sea el primer elemento, el naranja sea el tercer elemento y el verde sea el segundo elemento*/
+
+
+
+.orange2{
+	background: orange; 
+	order: 3;
+}
+.blue2{
+	background: blue;
+	order: 1;
+}
+
+.green2{
+	background: green;
+	order: 2;
+}

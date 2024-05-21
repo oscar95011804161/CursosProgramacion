@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metodologia BEM</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styleMetodologiaBEM.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Volver a index</a>
+		</nav>
+					
+		<center><h1>Metodologia BEM</h1></center>
+	</header>
+	<section>
+		<article>
+			<!--Para poner a prueba la metodologia bem vamos a crear un div con la clase form1 donde utilizaremos la metodologia web para aplicar los cambios a todos los formularios o a uno en especifico-->
+			<h2>Formulario Usando metodologia BEM</h2>
+			<div class="form1">  <!--Creamos una clase llamada form1-->
+
+				<input type="text" class="form1__input"><!--le colocamos al form1 __input para editarlo como clase aparte en css -->
+				<input type="text" class="form1__input--active">  <!--Le colocamos --active  para crear una clase aparte en css -->
+				<input type="text" class="form1__input"><!--le colocamos al form1 __input para editarlo como clase aparte en css -->
+				<input type="text" class="form1__input"><!--le colocamos al form1 __input para editarlo como clase aparte en css -->
+				<input type="text" class="form1__input"><!--le colocamos al form1 __input para editarlo como clase aparte en css -->
+				<input type="text" class="form1__input"><!--le colocamos al form1 __input para editarlo como clase aparte en css -->
+			
+			<!--Para editar dentro de otro-->	
+			</div class="form2">  <!--creamos una clase llamada form2-->
+				<p class="form2__p"> <!--Para crear una subclase para <p> usamos __p  -->
+					<h2 class="form2__p-h2"> <!--Para crear una subclase <h2> de la subclase <p> no usamos otra vez__ sino -h2 -->
+						
+					</h2> 
+
+				</p>
+
+			<div>
+				
+			</div>
+		</article>
+	</section>
+</body>
+</html>
