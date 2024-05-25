@@ -1,0 +1,125 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+
+
+body{
+    background: radial-gradient(circle, #10997b,#305326);  
+ }
+ 
+
+ 
+ @media screen and (min-width: 1000px) {   /*PC/*
+ 
+       /* imagen principal---------------------------------*/
+       
+       
+ 
+       .slider{
+         width: 800px;
+         height: 500px;
+         margin: 50px auto 0;
+         overflow: hidden;  
+       }
+      .slider ul{
+          display: flex;
+          padding: 0px;
+          animation: cambio 20s infinite alternate ease-in-out;
+          width: 700%;   /*es la distancia maxima en recorrido (debe ser 100% mayor a el ultimo margin-left del keyframes)*/
+       }
+      .slider li{
+          width: 100%;
+          list-style: none;  /*Para quitar viñetas que trae por defecto la lista*/
+          
+       }
+       .slider img{
+          width: 100%;
+          height: 100%;
+       }
+       @keyframes cambio {
+         0%{margin-left: 0%;}
+         14%{margin-left: 0%;}
+         
+         21%{margin-left: -100%;}
+         28%{margin-left: -100%;}
+         
+         35%{margin-left: -200%;}
+         42%{margin-left: -200%;}
+
+         49%{margin-left: -300%;}
+         56%{margin-left: -300%;}
+
+         63%{margin-left: -400%;}
+         70%{margin-left: -400%;}
+
+         77%{margin-left: -500%;}
+         84%{margin-left: -500%;}
+ 
+         91%{margin-left: -600%;}
+         100%{margin-left: -600%;}
+       } 
+ 
+ 
+ 
+
+       
+       /*Parte texto-----------------------------------------------*/
+       .texto{
+          font-size: 50px;
+          color: #fff;
+          background-color: #b85503;
+          flex-grow: 1;
+          font-family:Verdana, Geneva, Tahoma, sans-serif cursive;
+ 
+          /* top  right bottom left */
+          margin: 50px 0px 50px 0px;
+          padding: 5px 250px 5px 250px;
+          
+       }  
+      
+ 
+    }  
+ 
+    
+ 
+ 
+    
+ 
+    @media screen and ( max-width: 1000px) AND ( min-width: 500px)  {  /*Tablet*/ 
+       
+      
+ 
+       .texto{
+          color: #fff;
+          background-color: #b85503;
+          flex-grow: 1;
+          font-family:Verdana, Geneva, Tahoma, sans-serif cursive;
+          /* top  right bottom left */
+          margin: 50px 0px 50px 0px;
+          padding: 5px 30px 5px 30px;  
+       }
+ 
+      
+       
+     
+    }     
+    
+    @media screen and ( max-width: 500px) AND ( min-width: 280px)  {    /*Movile*/
+       
+       .texto{
+          color: #fff;
+          background-color: #b85503;
+          flex-grow: 1;
+          font-family:Verdana, Geneva, Tahoma, sans-serif cursive;
+          /* top  right bottom left */
+          margin: 50px 0px 50px 0px;
+          padding: 5px 10px 20px 10px;
+          
+       }
+         
+    }  
+ 
