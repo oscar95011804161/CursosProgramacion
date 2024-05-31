@@ -10,7 +10,7 @@ img{
 }
 
 body{
-	background: radial-gradient(circle, #080808,#125FAC);/*Le damos un fondo diferente a la pagina*/
+	background: rgba(0,107,192,255);/*Le damos un fondo diferente a la pagina*/
 }
 ul{
 	margin: 10px ;

@@ -1,4 +1,4 @@
-body{background: radial-gradient(circle, #d1f020,#678d29);}
+body{background: #f3db1c;}
 
 .form-img { /*Formulario de imagen*/
     flex:1;
@@ -35,7 +35,7 @@ ul{
 }
 
 .Main{ 
-    background: radial-gradient(circle, #d1f020,#678d29);
+    background: #f3db1c;
     flex-basis: 300px;   /*ver leccion 24 propiedad de los items*/
     flex-grow: 2;        /*ver leccion 24 propiedad de los items*/
     flex-shrink: 0;      /*ver leccion 24 propiedad de los items*/

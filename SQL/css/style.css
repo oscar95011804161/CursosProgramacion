@@ -3,7 +3,9 @@
 	font-family: times new roman;
 	font-size: 20px;
 	font-weight: 100;
-	background-color:#1A95CD;
+	background-color:#89d0f1
+
+	;
 	
 }
 
@@ -24,8 +26,8 @@ h1{
 .estructura{
 
 	color: white;
-	height: 400px
-	width:400px;
+	height: 400px;
+	width: 400px;
 	margin: 30px 30px 30px 30px;
 }
 img{
