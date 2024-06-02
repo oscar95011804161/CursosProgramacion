@@ -1,0 +1,124 @@
+
+body{
+   background: radial-gradient(circle, #10997b,#305326);  
+}
+
+
+
+/*Esto es mobile first por lo que esta es la resolucion para celular*/
+.content{
+   display: grid;
+   flex-direction: column;
+   height: 120vh;  /*con esto modificamos la altura del todo el grid en mobile*/
+}
+.Header, .Aside, .Footer {                   
+   padding: 20px;  
+}
+.Header{
+
+   flex-basis: 100%;
+   padding-top: 120px; /*Bajamos el nav*/    
+   width: 100%;
+   position:fixed;  
+   margin: -120px; /*con el margin subimos el nav*/ 
+   margin-left: 0px;
+   z-index: 10;
+        
+
+
+   background-color: rgb(184, 85, 3);
+   flex-basis: 60px;    /*ver leccion 24 propiedad de los items*/
+}
+.Main{ 
+   background: #fff;
+   flex-basis: 300px;   /*ver leccion 24 propiedad de los items*/
+   flex-grow: 2;        /*ver leccion 24 propiedad de los items*/
+   flex-shrink: 0;      /*ver leccion 24 propiedad de los items*/
+}
+.Aside{
+   background-color: rgb(19, 14, 12);
+   
+   flex-basis: 200px;    /*ver leccion 24 propiedad de los items*/
+   flex-grow: 2;         /*ver leccion 24 propiedad de los items*/
+   flex-shrink: 0;       /*ver leccion 24 propiedad de los items*/
+}
+.Footer{
+   background-color: #b85503;
+   flex-grow: 1;               /*ver leccion 24 propiedad de los items*/
+}
+
+
+
+
+.contenedor-main{
+   margin: 5px;
+   padding: 30px;
+}
+
+/*Imagen de logo---------------------------------------------------------------*/
+.form-img { /*Formulario de imagen*/
+   flex:1;
+   display: flex;
+   padding: 10px;
+   min-width: 100px; 
+   max-width: 200px;
+   order: 2;
+} 
+.form-img div{padding: 20px;}
+.img-container div{
+  background: white; /*EL color del fondo del logo*/
+  border-radius: 50%;
+  text-align: center;
+  padding: 15px;
+}
+.img-container{  margin: auto;  }
+.form-img img{ /*imagen especifica*/
+   width: 80%;  
+} 
+/*Mapa------------------------------------------------------------------------*/
+.Cont-M{
+   position: relative;
+   height: 0;
+   overflow: hidden;
+   padding-top:15px;
+   padding-bottom: 400px;
+
+}
+
+.Cont-M iframe{
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   
+}
+/*Fin Mapa-----------------------------------------------------------------------------*/
+
+/*Imagenes--------------------------------------------------------------------------------------------------------*/
+.Grid-container{     /*Con grid para el justiy items y align items*/
+   display: grid;   
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));      
+   grid-template-rows: repeat(3, 200px); 
+   
+   
+   grid-gap: 10px;
+   z-index: 10; 
+
+   grid-auto-rows: 100px; /*Aqui modificamos el tamaÃ±o de todas las filas de grid implicito a 1fr*/
+}
+
+.Grid-container img{
+   
+      width: 100%;
+      height: 100%;
+      object-fit: cover;   /*Con esta propiedad se adapta las imagenes*/
+ 
+}
+
+/*Fin imagenes-----------------------------------------------------------------------------------------------------*/
+
+.nav__responsive-ul{display: none;} /*Para ocultar el menu responsive es OBLIGATORIO*/
+
+/*---------------------------------------------------------------------------------------------------------------*/
