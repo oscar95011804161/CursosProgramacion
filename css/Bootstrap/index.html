@@ -8,10 +8,16 @@
 	<meta name="description" content="esta es una pagina web es para aprender boostrap">
 	<meta name="Copyright" content="cursos boostrap">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/ejercicio1.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandard.css">
+	<link rel="stylesheet" type="text/css" href="css/styleStandardResp.css">
+
+
 
 	<!--Link de boostrap ----------------------------------------------------------------------------------------------------->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<!--Iconos bootstrap-->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 	<!--Fin link boostrap----------------------------------------------------------------------------------------------------->
 	<script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script> <!--Con esto traemos el icono-->
@@ -19,18 +25,45 @@
 	<title>Curso Bootstrap</title>
 </head>
 <body>
-	<header class="Header">
-			<nav>	
-				<ul>  
-				   <li class="nav__li "><a href="../index.html">Inicio</a></li>														
-				   <li class="nav__li"><a href="container.html">Tema 1: Container</a></li>
-				   <li class="nav__li"><a href="columnas.html">Tema 2: Columnas</a></li>
-				   <li class="nav__li"><a href="breakpoints.html">Tema 3: Breakpoints</a></li>
-				   <li class="nav__li"><a href="margenes.html">Tema 4: Margenes</a></li>
-				   <li class="nav__li"><a href="ejercicio1.html">Tema 5: ejercicio practico 1</a></li>
-			   </ul> 
-			</nav>	
-	</header>
+	
+
+
+	<nav class="navbar navbar-expand-sm bg-body-tertiary">
+    	<div class="container-fluid">
+	        <a class="navbar-brand" href="#"> <img src="img/Bootstrap.ico" class="logo"> </a>
+	        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+      		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+	      		<ul class="navbar-nav ms-auto me-5"> <!--ms-auto es para que mande el menu a la izquierda me-5 para correr un poco ala izquierda-->
+		            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+		            <li class="nav-item dropdown">
+		              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		                Temas
+		              </a>
+		            	<ul class="dropdown-menu">
+			                <li><a class="dropdown-item" href="container.html"> Container</a></li>
+			                <li><a class="dropdown-item" href="columnas.html"> Columnas</a></li>
+			                <li><a class="dropdown-item" href="breakpoints.html"> Breakpoints</a></li>
+			                <li><a class="dropdown-item" href="margenes.html"> Margenes</a></li>
+		           		</ul>
+		            </li>
+		            <li class="nav-item"><a class="nav-link" href="ejercicio1.html"> Ejercicio 1</a></li>
+		            <li class="nav-item dropdown">
+		              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		                Redes sociales
+		              </a>
+		            	<ul class="dropdown-menu">
+			                <li><a class="dropdown-item" href="#">Facebook</a></li>
+			                <li><a class="dropdown-item" href="#">whatsapp</a></li>
+			                <li><a class="dropdown-item" href="#">twitter</a></li>
+		           		</ul>
+		            </li>
+		        </ul>
+        	</div>
+   	    </div>
+	</nav>           
+
 	<!--Texto----------------------------------------------------------------------------------------------------------------------------->
 			<div class="Contenedor-texto">
 				<div class="texto">
@@ -39,5 +72,10 @@
 				</div>	
 			</div>
 <!--Fin -->
+
+
+    <!--Link de boostrap javascript ----------------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
