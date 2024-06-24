@@ -21,34 +21,12 @@
         z-index: 10;
 }
 
-.distancia{
-    width: 100%;
-    border: none;
-    
+.iframeFooter{
+    width: 100%;    
 }
 
-@media only screen and (max-width:500px) {
-
-    .distancia{
-        width: 100%;
-        height: 1000px;
+@media only screen and (max-width:575px) {
+    .iframeFooter{
+        height: 300px;
     }
-
-    .Container-Responsive{
-        position: relative;
-        padding-bottom: 56%;
-        padding-top: 15px;
-        height: 0;
-        overflow: hidden;
-    }
-    
-    .Container-Responsive iframe{
-    
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
 }

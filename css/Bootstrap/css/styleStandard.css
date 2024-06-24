@@ -40,9 +40,10 @@ article{margin: 40px 60px;}
 	margin-right: 5px ;   /*realizamos un margen a los iconos 5 pixeles a la derecha*/
     
 }
-
-
-
+.iframeHeader{ width: 100%;}
+.iframeMain{ width: 100%;}
+.iframeNav{ width: 100%;}
+.iframeFooter{ width: 100%;}
 
 
 
