@@ -9,48 +9,14 @@ p{text-align: justify; font-size: 20px;}
 .amarilloRojo{color: #dd6707;}
 .center{text-align: center;}
 
-.separador{padding-top: -100px;}/*Con esto subimos el separador*/
-/*body{padding-top: 30px;} */
-.nav{
-    padding-top: 120px; /*Bajamos el nav*/ 
-    width: 100%;   /*Anchura muy grande para rellenar*/ 
-    background:#378a53; 
-    position:fixed;  
-    margin: -150px; /*con el margin subimos el nav*/ 
-    margin-left: 0px;
-    z-index: 10;
-}
 
-    
-        
-    
 
-.nav__li { display: inline-block; color: #fff; padding: 12px;} /*ponemos links en misma fila y separacion*/ 
-.nav__li a{color: #fff; text-decoration: none;} /*color blanco texto y sin decoracion*/ 
-.logo{margin-top: -30px;} /*color blanco texto y sin decoracion*/ 
-.nav__li:hover > a{color: #bbb;}/*cuando pase por texto cambia de color*/
 section{margin: 40px 60px;}
 article{margin: 40px 60px;}
-.footer{ padding: 20px 20px; color: #fff; background: #378a53; text-align: center; width: 100%; }
 
 
-.nav__li i{ /*modificamos el i que se encuentra dentro del .nav__li*/
-	text-align: right; /*Aqui alineamos los iconos*/
-	box-sizing:border-box;
-	margin-right: 5px ;   /*realizamos un margen a los iconos 5 pixeles a la derecha*/
-    
-}
-.iframeHeader{ width: 100%;}
-.iframeMain{ width: 100%;}
-.iframeNav{ width: 100%;}
-.iframeFooter{ width: 100%;}
-
-
-
-
+.iframeFooter{ width: 100%; height: 180px;}
 /*Efecto blour*/
-
-
 
 .background-container{
     width: 100%;

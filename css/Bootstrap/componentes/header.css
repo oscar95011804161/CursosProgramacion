@@ -1,3 +1,19 @@
+.logo{
+    width: 50px;
+    height: 40px;   
+   }
+
+   .header{
+    padding-top: 120px; /*Bajamos el nav*/ 
+    width: 100%;   /*Anchura muy grande para rellenar*/ 
+    background-color: #101c20;
+    position:fixed;  
+    margin: -120px; /*con el margin subimos el nav*/ 
+    margin-left: 0px;
+    z-index: 10;
+}
+
+.iframe_ej{ width: 100%;}
 
 @media only screen and (max-width:575px) {
 
@@ -11,13 +27,8 @@
     .amarilloRojo{color: #dd6707;}
     .center{text-align: center;}
 
-    .iframeFooter{ height: 360px;}
+    .iframeFooter{ height: 300px;}
 
-
-    
+    .iframe_ej2{ height: 300px;}
 
 }
-
-
-
-
