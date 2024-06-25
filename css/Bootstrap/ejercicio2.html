@@ -28,82 +28,40 @@
 
 
 	<main>
-		<!--Texto----------------------------------------------------------------------------------------------------------------------------->
-			<div class="Contenedor-texto">
-				<div class="texto">
-					<br><br><br><br>
-					<h1 class=" text-center ">Ejercicio 2</h1>
-					<br><br>
-					<p class="marginText  ">
-						En esta ocación vamos a crear un formulario con bootstrap. <br>
-						Vamos a crear un un formulario con las etiquetas "label" para colocar texto y "form" para el formulario.<br>
-						Con bootstrap colocamos clase a label = form-label y a input = form-control
-					</p> 
-
-
-				</div>	
-			</div>
+		<!--Texto------------------>
+			
+		<div class="texto">
+			<br><br><br><br>
+			<h1 class=" text-center ">Ejercicio 2</h1>
+			<br><br>
+			<p class="marginText  ">
+				En esta ocación vamos a crear un formulario con bootstrap. <br>
+				Vamos a crear un un formulario con las etiquetas "label" para colocar texto y "form" para el formulario.<br>
+				Con bootstrap colocamos clase a label = form-label y a input = form-control
+			</p> 
+		</div>	
+					
 	<!--Fin -->	
-		<!--mt-3 es una imagen en la parte superior-->
-		<p class="marginText">Formulario 1</p>
-		<div class="container mt-3">
-			<form>
-				<label class="form-label" for="Name"> Nombre:  </label>
-				<input class="form-control" placeholder="Escribe el nombre" type="text" id="Name"> 
-				<label class="form-label" for="Date"> fecha:  </label>
-				<input class="form-control" placeholder="Escribe la fecha" type="date" id="Date">
-				<label class="form-label" for="Photo"> foto:  </label>
-				<input class="form-control" placeholder="Envia la foto" type="file" id="Photo">
-			</form>	
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-md-6">
+				<input class="form-control form-control-lg mb-3" type="text" id="campo_nombre" placeholder="escribe tu nombre">
+  				<input class="form-control form-control-lg mb-3" type="text" id="campo_nombre" placeholder="escribe tu nombre">	
+				<input class="form-control form-control-lg mb-3" type="text" id="campo_nombre" placeholder="escribe tu nombre">
+			</div>
+			<div class="col-md-6">
+				<div class="form-floating mb-3">
+  					<textarea class="form-control" cols="30" rows="7"></textarea>
+				</div>
+			</div>
+			
+			<div class="col-md-4 offset-md-4 text-center">
+				<button class="btn btn-success btn-lg" type="submit">Enviar</button>
+			</div>
+
 		</div>
-
-		<p class="marginText">check radio</p>
-		<div class="container mt-3">
-
-			<div class="form-check">
-  				<label class="form-check-label" for="hombre">Hombre </label>
-  				<input class="form-check-input" id="hombre" type="radio" name="check">
-			</div>
-			<div class="form-check">
-  				<label class="form-check-label" for="mujer">Mujer</label>
-  				<input class="form-check-input" id="mujer" type="radio" name="check">	
-			</div>
-			<div class="form-check">
-  				<label class="form-check-label" for="otro">Otro</label>
-  				<input class="form-check-input" id="otro" type="radio" name="check">	
-			</div>
-		</div>
-
-		<p class="marginText">check radio horizontal</p>
-		<div class="container mt-3">
-
-			<div class="form-check form-check-inline">
-  				<label class="form-check-label" for="hombre">Hombre </label>
-  				<input class="form-check-input" id="hombre" type="radio" name="check">
-			</div>
-			<div class="form-check form-check-inline">
-  				<label class="form-check-label" for="mujer">Mujer</label>
-  				<input class="form-check-input" id="mujer" type="radio" name="check">	
-			</div>
-			<div class="form-check form-check-inline">
-  				<label class="form-check-label" for="otro">Otro</label>
-  				<input class="form-check-input" id="otro" type="radio" name="check">	
-			</div>
-		</div>
-
-		<p class="marginText">En la actualidad ya no se utiliza label fue remplazado por floating labels
-		 que es un label dentro del formulario y luce mejor. </p>
-
-		<div class="container mt-3">
-			<div class="form-floating mb-3">
-  				<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-  				<label for="floatingInput">Correo</label>
-			</div>
-			<div class="form-floating">
-  				<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  				<label for="floatingPassword">Contraseña</label>
-			</div>
-		</div>
+	</div>
+		
 
 		 	
 
