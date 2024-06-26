@@ -1,0 +1,17 @@
+$titulo:#ff0000;
+$colorTexto: #000; 
+$fondo: #1fca1f;
+
+
+
+.article{
+    color: $titulo;
+    p{
+       color:  $colorTexto;
+
+    }
+}
+
+*{
+    background: $fondo;
+}

@@ -1,0 +1,22 @@
+.nav ul li a {
+  text-decoration: none; }
+
+.article {
+  color: #ff0000;
+  background-color: #10110e;
+  padding: 20px;
+  width: 400px; }
+  .article .titulo {
+    color: #ff0000; }
+  .article p {
+    color: #1a40e6; }
+  .article a {
+    color: #d4d4d4;
+    text-decoration: none; }
+  .article .author {
+    color: #ff0000; }
+
+body {
+  background-color: #12911c; }
+
+/*# sourceMappingURL=selectores.css.map */

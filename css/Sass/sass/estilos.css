@@ -1,0 +1,14 @@
+body {
+  background-color: #dbae18; }
+
+.articulo {
+  background-color: #f2f2f2;
+  padding: 20px; }
+  .articulo .titulo {
+    background-color: #000; }
+  .articulo .autor {
+    color: #ff0000; }
+  .articulo p a {
+    text-decoration: none; }
+
+/*# sourceMappingURL=estilos.css.map */
