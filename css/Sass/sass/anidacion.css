@@ -1,0 +1,26 @@
+body {
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.article {
+  background-color: #d4d4d4;
+  width: 800px;
+  padding: 20px;
+  /*p{color:  $Azul;}*/ }
+  .article .titulo {
+    color: #f9a03f; }
+  .article div {
+    text-align: center; }
+    .article div a {
+      color: #f9a03f;
+      text-decoration: none;
+      font-size: 25px; }
+      .article div a:hover {
+        text-decoration: underline; }
+  .article .author {
+    color: #1a40e6; }
+
+.nav ul li a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=anidacion.css.map */

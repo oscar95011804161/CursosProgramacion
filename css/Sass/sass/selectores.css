@@ -1,13 +1,14 @@
-.nav ul li a {
-  text-decoration: none; }
+body {
+  background-color: grey;
+  font-family: Arial, Helvetica, sans-serif; }
 
 .article {
-  color: #ff0000;
-  background-color: #10110e;
+  background-color: #d4d4d4;
+  width: 800px;
   padding: 20px;
-  width: 400px; }
+  color: #ff0000; }
   .article .titulo {
-    color: #ff0000; }
+    color: #10110e; }
   .article p {
     color: #1a40e6; }
   .article a {
@@ -16,7 +17,7 @@
   .article .author {
     color: #ff0000; }
 
-body {
-  background-color: #12911c; }
+.nav ul li a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=selectores.css.map */

@@ -1,0 +1,42 @@
+$Rojo:#ff0000;
+$Blanco: #d4d4d4; 
+$Verde:#12911c;
+$Negro: #10110e;
+$Azul:#1a40e6;
+$Gris: grey;
+$Amarillo: #f9a03f;
+
+body{
+    background-color: $Gris;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article{
+    background-color: $Blanco;
+    width: 800px;
+    padding: 20px;
+    
+    
+    .titulo{color: $Amarillo; }
+
+    /*p{color:  $Azul;}*/
+    
+    div{
+        text-align: center;
+        a { 
+            color: $Amarillo;
+            text-decoration: none;
+            font-size: 25px;
+            &:hover{ text-decoration: underline;}
+        }
+    }
+    .author{color: $Azul ;}
+}
+
+.nav{ ul{
+        li{
+            a{text-decoration: none;}
+        }
+    }
+}    
+
