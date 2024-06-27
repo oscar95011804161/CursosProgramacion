@@ -1,0 +1,25 @@
+/*Con mixin podemos crear funciones */
+/*la funcion se llamara borde tendra como parametro la variable radio*/
+/*luego llamamos a la funcion y en radio colocamos el radio que queramos en este caso sera 5px*/
+article {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+
+aside {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px; }
+
+footer {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px; }
+
+/*# sourceMappingURL=mixinFunciones.css.map */

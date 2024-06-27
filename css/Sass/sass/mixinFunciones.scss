@@ -1,0 +1,26 @@
+
+/*Con mixin podemos crear funciones */
+/*la funcion se llamara borde tendra como parametro la variable radio*/
+/*luego llamamos a la funcion y en radio colocamos el radio que queramos en este caso sera 5px*/
+
+@mixin borde($radio) {
+
+    -moz-border-radius: $radio;
+    -webkit-border-radius: $radio;
+    -ms-border-radius: $radio;
+    -o-border-radius: $radio;
+    border-radius: $radio; 
+
+}
+
+article{
+    @include borde(5px);
+}
+
+aside{
+    @include borde(6px);
+}
+
+footer{
+    @include borde(8px);
+}
