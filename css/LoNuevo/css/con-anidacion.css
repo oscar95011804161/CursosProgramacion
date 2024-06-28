@@ -1,0 +1,49 @@
+
+/*Vamos a hacer con anidacion */
+
+body{
+    background-color: #86bee8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+.container{
+    width: 500px; margin: 0 auto;  background-color: #fff; border: 1px solid #ccc; padding: 10px; box-shadow: 0 0 10px #ccc ;
+    
+    .main{
+        width: 100%; padding: 10px;      
+    }
+    & article{
+        .title{
+            font-size: 68px;
+            font-weight: bold;
+            margin-bottom: 10px;   
+        }
+        > p  {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #8e8e8e;
+            & a{
+                color: #ce2175;
+                text-decoration: none;
+                &:hover{
+                    color: #21ce21;
+                }
+            }
+        }
+    } 
+}
+figure{
+        .img1{
+            width: 300px;
+            height: 500px;
+        }
+        .img2{
+            width: 300px;
+            height: 500px;   
+        }
+        
+    
+
+}

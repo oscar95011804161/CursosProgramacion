@@ -1,0 +1,28 @@
+/*Con :root{} podemos declarar el valor de nuestras variables*/
+:root{
+    --fondo-claro: #e4e0e0;  
+    --fondo-oscuro: #000;
+    --texto-claro: #fff;
+    --texto-oscuro: #000;
+    --letra-arial: Arial, Helvetica, sans-serif;
+    --letra-times: 'Times New Roman', Times, serif;
+    --ceparacion: 40px;
+    
+    --color-botones: #bb7711;
+}
+/*Aqui le podemos dar el valor con las variables que creamos*/
+.container{
+    background-color: var(--fondo-oscuro);
+}
+.container section article center h2{
+    font-family: var(--letra-arial) ;
+    color: var(--texto-claro);
+}
+.container section article p {
+    font-family: var(--letra-times) ;
+    color: var(--texto-claro);   
+    padding-left: var(--ceparacion);
+}
+.img{
+    margin-left: var(--ceparacion);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/import.css">
+	<title>importar</title>
+</head>
+<body>
+
+<div class="container">
+	<header>
+		<nav>
+			<ul>
+				<li> <a href="index.html">Home nesting</a></li>
+				<li> <a href="variables.html">Variables</a></li>
+				<li> <a href="anidacion.html">Anidacion</a></li>
+				<li> <a href="importar.html">Importar</a></li>
+				<li> <a href="../index.html">volver a css</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="main">
+		
+		<section class="posts">
+			<article>
+
+				<h2 class="title">Importar css</h2>
+				
+				<p>@import:Permite cargar ficheros .css externos, lee las lineas de codigo e incorporarlo al archivo actual. Estas reglas CSS suelen indicar en las primeras lineas de fichero, ya que deben figurar antes de las otras reglas CSS o contenido CSS similar.</p>
+
+				<p>Tipos de importacion | Descripción</p>
+				<p>@import url(); | importamos una hoja de estilos css externa.</p>
+				<p>@import url(); mediaquery | importamos una hoja de estilo css solo si coincide con el mediaquery indicado.</p>
+				<p>@import url(); supports (condicion) | importamos una hoja de estilo css solo si el navegador soporta la condicion.</p>
+				<p>@import url(); layer | importamos una hoja de estilo css y la colocamos en la capa nombre.</p>
+				<p>@import url(); layer() | importamos una hoja de estilo css y la colocamos en una nueva capa anonima.</p>
+
+				<h2 class="title">Formato del import</h2>
+
+				<p>@import url("estilos.css"); Normal</p>
+				<p>@import "estilos.css"; Sin url()</p>
+				<p>@import url("layout/header.css");  dentro de una carpeta</p>
+				<p>@import url("https://oscar95011804161.github.io/<br>CursosProgramacion/css/Sass/sass/practica/styles.css");<br> de una pagina web</p>
+
+				<p> Por ejemplo aqui importamos los estilos de el proyecto final de sass y la anidacion de nesting css</p>
+
+				<figure>
+					<img  src="assets/img/import.PNG"><br>
+					
+				</figure>
+				
+				
+				
+				
+				
+				
+			</article>
+			
+		</section>
+	</section>
+
+	
+	<footer>
+		<p>
+			Oscar 2024 - Todos los Derechos Reservados
+		</p>
+	</footer>
+	
+</div>
+
+</body>
+</html>
