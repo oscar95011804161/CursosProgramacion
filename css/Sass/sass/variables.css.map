@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAMA,QAAQ;EACJ,KAAK,EAPD,OAAO;EAQX,UAAC;IACE,KAAK,EARC,IAAI;;AAajB,CAAC;EACG,UAAU,EAbN,OAAO",
-"sources": ["variables.scss"],
-"names": [],
-"file": "variables.css"
-}
+{"version":3,"sources":["variables.scss","variables.css"],"names":[],"mappings":"AAMA;EACI,cAPI;ACER;ADMI;EACG,WARM;ACIb;;ADSA;EACI,mBAbI;ACOR","file":"variables.css"}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\xampp\\cursos\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\curso_c_sharp.csproj": {}
+    "C:\\Users\\oscar\\Documents\\GitHub\\CursosProgramacion\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\curso_c_sharp.csproj": {}
   },
   "projects": {
-    "C:\\xampp\\cursos\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\curso_c_sharp.csproj": {
+    "C:\\Users\\oscar\\Documents\\GitHub\\CursosProgramacion\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\curso_c_sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\xampp\\cursos\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\curso_c_sharp.csproj",
+        "projectUniqueName": "C:\\Users\\oscar\\Documents\\GitHub\\CursosProgramacion\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\curso_c_sharp.csproj",
         "projectName": "curso_c_sharp",
-        "projectPath": "C:\\xampp\\cursos\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\curso_c_sharp.csproj",
+        "projectPath": "C:\\Users\\oscar\\Documents\\GitHub\\CursosProgramacion\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\curso_c_sharp.csproj",
         "packagesPath": "C:\\Users\\oscar\\.nuget\\packages\\",
-        "outputPath": "C:\\xampp\\cursos\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\obj\\",
+        "outputPath": "C:\\Users\\oscar\\Documents\\GitHub\\CursosProgramacion\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Web.WebView2": {
+              "target": "Package",
+              "version": "[1.0.2592.51, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
