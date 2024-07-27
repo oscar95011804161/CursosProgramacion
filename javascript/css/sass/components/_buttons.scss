@@ -1,0 +1,36 @@
+
+.form__input{
+    width: 20%;
+    padding: 12px;
+    margin: 6px 0px;
+    border: 5px solid rgb(10, 14, 12);
+    background-color: rgb(23, 23, 179);
+    color: #fff;
+}
+
+
+
+
+
+/*Diseño del boton*/
+.form input[type="button"]{
+    background-color: rgb(9, 6, 10);
+    border: 3px solid green;
+    padding: 12px;
+}
+
+.form input[type="button"]:hover{
+    background-color: rgb(73, 71, 73);
+    border: 3px solid rgb(21, 231, 56);
+    padding: 12px;
+}
+
+.form input[type="button"]:focus{
+    background-color: rgb(84, 117, 99);   
+}
+
+
+
+/*.form input[type="button"]:active{
+    background-color: linear-gradient(to bottom, #072, #050);;  
+}*/
