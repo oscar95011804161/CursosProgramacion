@@ -1,0 +1,47 @@
+
+/* Ejemplo de estilos CSS para la barra de navegación de Bootstrap */
+.navbar {
+    padding: 0.5rem 1rem;
+    background-color: #343a40; /* Color de fondo oscuro */
+}
+
+.bg-dark {
+    background-color: #343a40 !important; /* Color de fondo oscuro */
+}
+
+.navbar-brand {
+    margin-right: 1rem; /* Espaciado a la derecha del logo */
+}
+
+.navbar-toggler {
+    border: none; /* Sin borde en el botón del menú móvil */
+}
+/*
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,...");  Icono por defecto para el botón del menú móvil 
+}*/
+
+.nav-link {
+    color: #ffffff; /* Color del texto en los enlaces de navegación */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+}
+
+.nav-link:hover {
+    color: #adb5bd; /* Color del texto al pasar el ratón */
+}
+
+.nav-item {
+    margin-right: 1rem; /* Espaciado a la derecha entre los elementos del menú */
+}
+
+.dropdown-menu {
+    background-color: #343a40; /* Color de fondo del menú desplegable */
+}
+
+.dropdown-item {
+    color: #ffffff; /* Color del texto en los elementos del menú desplegable */
+}
+
+.dropdown-item:hover {
+    background-color: #495057; /* Color de fondo del elemento del menú desplegable al pasar el ratón */
+}

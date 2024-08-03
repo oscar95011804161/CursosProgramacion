@@ -1,4 +1,87 @@
 
+.boton{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    border: 1px solid transparent;     
+}
+
+    /* Botón Primario */
+    .boton-azul { background-color: #007bff; color: #ffffff; border-color: #007bff;}
+    .boton-azul:hover {  background-color: #0056b3; border-color: #004085;}
+    .boton-azul:focus, .boton-azul:active { box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);}
+
+    /* Botón Secundario */
+    .boton-gris { background-color: #6c757d; color: #ffffff; border-color: #6c757d;}
+    .boton-gris:hover { background-color: #5a6268; border-color: #4e555b;}
+
+    /* Botón de Éxito */
+    .boton-verde {background-color: #28a745; color: #ffffff; border-color: #28a745;}
+    .boton-verde:hover { background-color: #218838; border-color: #1e7e34;}
+
+    /* Botón de Peligro */
+    .boton-rojo { background-color: #dc3545; color: #ffffff; border-color: #dc3545;}
+    .boton-rojo:hover { background-color: #c82333; border-color: #bd2130;}
+
+    /* Botón de Advertencia */
+    .boton-amarillo { background-color: #ffc107; color: #212529; border-color: #ffc107;}
+    .boton-amarillo:hover { background-color: #e0a800; border-color: #d39e00;}
+    .boton-amarillo:focus, .boton-amarillo:active { box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);}
+
+     /* Botón de Información */
+    .boton-aqua {  background-color: #17a2b8; color: #ffffff; border-color: #17a2b8; }
+    .boton-aqua:hover { background-color: #138496; border-color: #117a8b;}
+    .boton-aqua:focus, .boton-aqua:active { box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);}
+
+    /* Botón Claro */
+    .boton-blanco { background-color: #f8f9fa; color: #212529; border-color: #f8f9fa;}
+    .boton-blanco:hover { background-color: #e2e6ea; border-color: #dae0e5;}
+    .boton-blanco:focus, .boton-blanco:active {  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);}
+
+    /* Botón Oscuro */
+    .boton-negro { background-color: #343a40; color: #ffffff; border-color: #343a40;}
+    .boton-negro:hover { background-color: #23272b; border-color: #1d2124; }
+    .boton-negro:focus, .boton-negro:active { box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);}
+
+    /* Botón Enlace */
+    .boton-enlace { font-size: 16px; color: #007bff; background-color: transparent; border: none; padding: 0; line-height: 1.5;}
+    .boton-enlace:hover { color: #0056b3; text-decoration: underline;}
+    .boton-enlace:focus, .boton-azulclaro:active { box-shadow: none;}
+
+    /* Tamaño Pequeño */
+    .boton-sm { font-size: 14px; padding: 5px 10px;}
+    /* Tamaño Grande */
+    .boton-lg { font-size: 18px; padding: 15px 30px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .form__input{
     width: 20%;
     padding: 12px;
@@ -12,22 +95,6 @@
 
 
 
-/*Diseño del boton*/
-.form input[type="button"]{
-    background-color: rgb(9, 6, 10);
-    border: 3px solid green;
-    padding: 12px;
-}
-
-.form input[type="button"]:hover{
-    background-color: rgb(73, 71, 73);
-    border: 3px solid rgb(21, 231, 56);
-    padding: 12px;
-}
-
-.form input[type="button"]:focus{
-    background-color: rgb(84, 117, 99);   
-}
 
 
 

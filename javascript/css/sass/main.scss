@@ -2,10 +2,15 @@
 
 // Importamos todos los activos sass 
 @import'base/typography';
-@import'theme/theme';
+//Components
+@import'components/buttons';
+@import'components/logo';
+@import'components/navbar';
+
 @import'layout/header';
 @import'layout/main';
 @import'layout/aside';
 @import'layout/footer';
 @import'layout/mediaqueries';
-@import'components/buttons';
+
+@import'theme/theme';
