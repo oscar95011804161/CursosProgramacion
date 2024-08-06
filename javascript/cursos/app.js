@@ -1,32 +1,28 @@
-// importa las funciones desde otro archivo
-import {saludar, detectarEdad} from "./funciones.js";
 
-//cremos la funcion principal
+
+// importa el objeto opciones con ES6+
+import { opciones } from "./opciones.js";
+
+// Funcion principal ---------------------------------------------------------------------------------------
 window.addEventListener("load", function(){ /*Load es cuando refresca la pagina se ejecutara la la funcion*/
     document.getElementById("app").addEventListener("click",
-function() {
-    
-    //definimos variables
-    let respuesta;
-    let valor;
+        function () {
+             
+            const respuesta = prompt("Que funcion quieres ejecutar: \n saludar: 1 \n detectar edad: 2 \n mayor o menor de edad: 3 \n contrasena: 4");
+
+            //Convertir respuesta a numero y almacenar en opcion
+            const opcion = parseInt(respuesta);
+
+            //Verificar si la opcion es valida y ejecutarla
 
 
-    alert("Que funcion quieres ejecutar saludar 1 o detectar edad 2");
-    
-    respuesta=prompt("escriba 1  o 2");
+            if (opciones[opcion]) {
+                opciones[opcion]();
+            } else {
+                alert("Opcion invalida, Porfavor selecciona la opcion de 1 a 4");
+            }
 
-    if(respuesta==1){
-        //saludar el nombre de la funcion y mario el valor de la variable
-        saludar ("mario");
 
-    } else if(respuesta==2){
-         valor = prompt("Digite la edad de la persona");
-        alert(detectarEdad(valor)) ;
-       // console.log(detectarEdad(valor)); //valor que el usuario coloque
-    }else{
-        alert("no has digitado 1 o 0");
-
-    }
     
 
 }) /*final de la funcion principal*/
