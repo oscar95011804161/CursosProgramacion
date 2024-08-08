@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\javascript",
-    "\\javascript\\cursos"
+    "\\javascript\\cursos",
+    "\\php",
+    "\\php\\practica",
+    "\\php\\practica\\practicaBackEnd",
+    "\\php\\practica\\practicaBackEnd\\php"
   ],
-  "SelectedNode": "\\javascript\\cursos\\opciones.js",
+  "SelectedNode": "\\javascript\\cursos\\app.js",
   "PreviewInSolutionExplorer": false
 }
