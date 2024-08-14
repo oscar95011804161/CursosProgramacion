@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\javascript",
-    "\\javascript\\cursos",
-    "\\php",
-    "\\php\\practica",
-    "\\php\\practica\\practicaBackEnd",
-    "\\php\\practica\\practicaBackEnd\\php"
+    "\\C_sharp",
+    "\\C_sharp\\forms",
+    "\\C_sharp\\forms\\WinFormsApp",
+    "\\C_sharp\\forms\\WinFormsApp\\WinFormsApp"
   ],
+  "SelectedNode": "\\C_sharp\\forms\\WinFormsApp\\WinFormsApp\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

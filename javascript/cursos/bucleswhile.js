@@ -1,5 +1,7 @@
 export function contador (cont){
 
+    alert("Imprimir los números del 1 al 5");
+        //let valor1 = prompt("");
     cont = 1;
     while (cont<5) {
         alert (cont);
@@ -9,12 +11,16 @@ export function contador (cont){
 }
 
 
-export function validarEdad (edad){
+export function validarEdad (){
 
-    
+    //declarando variable.
     let validacion= false;
-
-
+    let edad;
+    alert("Ejercicio: Validación de Edad\n"+
+        "En este ejercicio, crearás un programa que pide al usuario que ingrese su edad y luego verifica si es"+ 
+        " mayor de edad. El programa seguirá pidiendo la edad hasta que el usuario ingrese un valor válido"+ 
+        " (un número positivo). Además, el programa debe informar si el usuario es mayor o menor de edad."
+    );
 
     while (!validacion) {
 
@@ -22,17 +28,16 @@ export function validarEdad (edad){
         //validar que sea positivo
         if (isNaN (edad) || edad < 0) {
             alert("la edad debe ser un numero positivo");
-            return;
+            
         } else if (edad >= 18) {
-            alert("Eres mayor de edad");
             validacion = true; //se sale del bucle si la edad es valida.
+            return "Eres mayor de edad";
+            
         }else if(edad <18 ){ 
-            alert("Eres menor de edad");
-            validacion = false;
-        }else {
-            alert("eres menor de edad porfavor ingresa una edad mayor o igual a 18");
-        }      
+            alert("Eres menor de edad(debes ser  mayor de edad)");  
+        }    
 
     }
 
 }
+

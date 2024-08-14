@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("curso_c_sharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15a22f56563e0ebabed73b890efe505f7bb635a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("curso_c_sharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("curso_c_sharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
