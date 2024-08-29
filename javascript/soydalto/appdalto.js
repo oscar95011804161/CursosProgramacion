@@ -10,7 +10,11 @@ function() {
 
 
 
-    const eleccion1 = prompt ("elije \n 1: Tema cofla\n"+ "2: Tema" );
+    const eleccion1 = prompt ("Elije \n 1: Tema cofla\n 2: Tema arrays \n 3: Tema while \n"+
+                            " 4: Tema for, continue,for in, for of\n"+
+                            " 5: Tema label \n 6: Tema funciones \n 7: entrada cofla \n"+
+                            " 8: Tema Entrada cofla. \n 9: Tema for each \n 10: Tema Objetos "
+      );
     
                 //Convertir respuesta a numero y almacenar en opcion
                 const opcion = parseInt(eleccion1);
@@ -19,7 +23,7 @@ function() {
                 if (opciones[opcion]) {
                     opciones[opcion]();
                 } else {
-                    alert("Opcion invalida, Porfavor selecciona la opcion de 1 a 2");
+                    alert("Opcion invalida, Porfavor selecciona la opcion de 1 a 7");
                 }
 
  }) /*final de la funcion principal*/

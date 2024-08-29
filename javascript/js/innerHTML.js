@@ -25,10 +25,8 @@ header.innerHTML =`
 		              </a>
 		            	<ul class="dropdown-menu ">
 
-		         				<li><a class="dropdown-item" href="Parte1.html">Curso de soy dalto 1.</a></li>
-								<li><a class="dropdown-item" href="Parte2.html">Curso de soy dalto 2.</a></li>
+		         				<li><a class="dropdown-item" href="Soydalto.html">Curso de soy dalto .</a></li>
 								<li><a class="dropdown-item" href="cursos.html">Curso de javascript.</a></li>
-								<li><a class="dropdown-item" href="ejercicios.html">ejercicios:</a></li>
 								<li><a class="dropdown-item" href="clasesAdicionales.html">Clases adicionales:</a></li> 
 		           		</ul>
 		            </li>

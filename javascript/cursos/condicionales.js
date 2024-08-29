@@ -169,5 +169,40 @@ export function impuestos (){
     }
 }
 
+export function calculadora() {
+    
+    alert("Programa para realizar sumas resta multiplicacion y division");
 
+    alert("Ahora vas a colocar los los numeros para realizar las operaciones matematicas");
+    const numero1String = prompt("escriba el primer numero");
+    const numero2String =prompt("escriba el segundo numero");
+
+    const operacionString = prompt("Digite la operacion que desea realizar suma 1 resta 2 multiplicacion 3"+
+                            " y division 4");
+
+    const numero1 = parseFloat(numero1String);
+    const numero2 = parseFloat(numero2String);
+    const operacion = parseInt(operacionString, 10);
+    
+    if (isNaN (numero1) || isNaN (numero2)) {
+        return "Uno o ambos números ingresados no son válidos. Por favor ingrese números válidos.";
+    }
+
+      if (operacion == 1) {
+          const suma = numero1 + numero2;
+          return "El resultado de la suma es " + suma;
+
+      } else if (operacion == 2) {
+          const resta = numero1 - numero2;
+          return "El resultado de la resta es " + resta;
+      } else if (operacion == 3) {
+          const multiplicacion = numero1 * numero2;
+          return "El resultado de la multiplicacion es " + multiplicacion;
+      } else if (operacion == 4) {
+          const division = numero1 / numero2;
+          return "El resultado de la division es " + division;
+      } else {
+          return "Operación inválida. Por favor ingrese un número entre 1 y 4. ";
+      }
+}
 

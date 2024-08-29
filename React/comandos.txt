@@ -1,0 +1,3 @@
+
+comando para instalar taiwindcss y run todos navegadores
+npm i -D tailwindcss postcss auto prefixed
