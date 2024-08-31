@@ -27,6 +27,7 @@ header.innerHTML =`
 
 		         				<li><a class="dropdown-item" href="Soydalto.html">Curso de soy dalto .</a></li>
 								<li><a class="dropdown-item" href="cursos.html">Curso de javascript.</a></li>
+								<li><a class="dropdown-item" href="frameworks/astro/dist/index.html">Astro.</a></li>
 								<li><a class="dropdown-item" href="clasesAdicionales.html">Clases adicionales:</a></li> 
 		           		</ul>
 		            </li>
